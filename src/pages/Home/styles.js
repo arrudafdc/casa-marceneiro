@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bg from "/assets/bg.jpg";
 
 export const Hero = styled.div`
   width: 100%;
@@ -7,7 +8,7 @@ export const Hero = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./assets/bg.jpg");
+  background-image: url(${bg});
   background-size: cover;
   background-position: center;
   margin-bottom: 10rem;
