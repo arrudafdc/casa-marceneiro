@@ -229,7 +229,7 @@ Error generating stack: `+o.message+`
   width: 100%;
   height: 100vh;
   background: ${e=>e.theme.background};
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   display: flex;
@@ -239,6 +239,7 @@ Error generating stack: `+o.message+`
   transform: translateX(100%);
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
 
   &.open {
     transform: translateX(0);
