@@ -8,14 +8,12 @@ export function Header() {
   const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
-    // Desativa o scroll quando o menu está aberto
     if (isMobile) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto"; // ou 'scroll', dependendo da sua necessidade
     }
 
-    // Limpeza do estilo ao desmontar o componente
     return () => {
       document.body.style.overflow = "auto";
     };

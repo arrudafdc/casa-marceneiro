@@ -71,7 +71,7 @@ export const MenuMobile = styled.nav`
   width: 100%;
   height: 100vh;
   background: ${(props) => props.theme.background};
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   display: flex;
@@ -81,6 +81,7 @@ export const MenuMobile = styled.nav`
   transform: translateX(100%);
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
 
   &.open {
     transform: translateX(0);
