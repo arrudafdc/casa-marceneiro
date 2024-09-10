@@ -91,6 +91,9 @@ Error generating stack: `+o.message+`
   }
 
   @media (max-width: 1000px) {
+    & {
+      margin-bottom: 5rem;
+    }
     h1 {
       font-size: 2rem;
       text-align: center;
@@ -153,7 +156,7 @@ Error generating stack: `+o.message+`
 
   @media (max-width: 620px) {
     p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 `,w0=Ye.section`
@@ -226,7 +229,7 @@ Error generating stack: `+o.message+`
       text-align: center;
     }
   }
-`,E0="/casa-marceneiro/assets/about1.jpg",C0="/casa-marceneiro/assets/phrase-bg.jpg";function _0(){return _.jsxs(_.Fragment,{children:[_.jsx(g0,{children:_.jsx(iu,{children:_.jsxs("h1",{children:["É doce casar no mar… ",_.jsx("span",{children:"Permita-se!"})]})})}),_.jsxs(iu,{children:[_.jsxs(y0,{children:[_.jsx("div",{children:_.jsx("img",{src:E0,alt:""})}),_.jsx("p",{children:"Abraçada pelos coqueiros e beijada pelo mar. A Casa Marceneiro é um refúgio anfitrião de histórias de amor"})]}),_.jsx(w0,{children:_.jsxs("p",{children:["Aqui Milagres acontecem! ",_.jsx("a",{href:"#",children:"Clique aqui"})," e escute com os pés descalços"]})})]}),_.jsxs(S0,{children:[_.jsxs(x0,{children:[_.jsxs("p",{children:["Quero viver no teu abraço",_.jsx("br",{}),"Quero morar no teu sorriso",_.jsx("br",{}),"Eternizar nossos laços",_.jsx("br",{}),"Em Casa e no paraíso"]}),_.jsxs("p",{children:["Onde possamos ser nós",_.jsx("br",{}),"De forma única e verdadeira",_.jsx("br",{}),"Fazer tudo do nosso jeito",_.jsx("br",{}),"Feito o marceneiro",_.jsx("br",{}),"Esculpe a madeira"]}),_.jsxs("p",{children:["Esculpir esse sonho",_.jsx("br",{}),"Junto a quem gostamos mais",_.jsx("br",{}),"Com as bênçãos desse lugar",_.jsx("br",{}),"Onde Milagres são reais!"]})]}),_.jsx(k0,{children:_.jsx("img",{src:C0,alt:""})})]})]})}/**
+`,E0="/casa-marceneiro/assets/about1.jpg",C0="/casa-marceneiro/assets/phrase-bg.jpg";function _0(){return _.jsxs(_.Fragment,{children:[_.jsx(g0,{children:_.jsx(iu,{children:_.jsxs("h1",{children:["É doce casar no mar… ",_.jsx("span",{children:"Permita-se!"})]})})}),_.jsxs(iu,{children:[_.jsxs(y0,{children:[_.jsx("div",{children:_.jsx("img",{src:C0,alt:""})}),_.jsx("p",{children:"Abraçada pelos coqueiros e beijada pelo mar. A Casa Marceneiro é um refúgio anfitrião de histórias de amor"})]}),_.jsx(w0,{children:_.jsxs("p",{children:["Aqui Milagres acontecem! ",_.jsx("a",{href:"#",children:"Clique aqui"})," e escute com os pés descalços"]})})]}),_.jsxs(S0,{children:[_.jsxs(x0,{children:[_.jsxs("p",{children:["Quero viver no teu abraço",_.jsx("br",{}),"Quero morar no teu sorriso",_.jsx("br",{}),"Eternizar nossos laços",_.jsx("br",{}),"Em Casa e no paraíso"]}),_.jsxs("p",{children:["Onde possamos ser nós",_.jsx("br",{}),"De forma única e verdadeira",_.jsx("br",{}),"Fazer tudo do nosso jeito",_.jsx("br",{}),"Feito o marceneiro",_.jsx("br",{}),"Esculpe a madeira"]}),_.jsxs("p",{children:["Esculpir esse sonho",_.jsx("br",{}),"Junto a quem gostamos mais",_.jsx("br",{}),"Com as bênçãos desse lugar",_.jsx("br",{}),"Onde Milagres são reais!"]})]}),_.jsx(k0,{children:_.jsx("img",{src:E0,alt:""})})]})]})}/**
  * @remix-run/router v1.19.1
  *
  * Copyright (c) Remix Software Inc.
