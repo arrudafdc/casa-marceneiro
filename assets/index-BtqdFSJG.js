@@ -171,7 +171,7 @@ Error generating stack: `+o.message+`
 
   @media (max-width: 620px) {
     p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 `,S0=Ye.section`
