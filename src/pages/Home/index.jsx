@@ -23,7 +23,7 @@ export function Home() {
       <MainContainer>
         <AboutContainer>
           <div>
-            <img src={aboutBg} alt="" />
+            <img src={phraseBg} alt="" />
           </div>
 
           <p>
@@ -71,7 +71,7 @@ export function Home() {
           </p>
         </PhraseContainer>
         <ImageContainer>
-          <img src={phraseBg} alt="" />
+          <img src={aboutBg} alt="" />
         </ImageContainer>
       </PhraseContainerBG>
     </>

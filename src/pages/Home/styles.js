@@ -20,6 +20,9 @@ export const Hero = styled.div`
   }
 
   @media (max-width: 1000px) {
+    & {
+      margin-bottom: 5rem;
+    }
     h1 {
       font-size: 2rem;
       text-align: center;
@@ -84,7 +87,7 @@ export const AboutContainer = styled.section`
 
   @media (max-width: 620px) {
     p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 `;
