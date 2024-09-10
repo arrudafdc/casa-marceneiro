@@ -35,3 +35,56 @@ export const Hero = styled.div`
     }
   }
 `;
+
+export const AboutContainer = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+  gap: 4rem;
+
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  p {
+    font-size: 2.5rem;
+    max-width: 390px;
+    text-align: end;
+  }
+
+  @media (max-width: 1200px) {
+    p {
+      font-size: 2rem;
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    & {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    p {
+      order: 1;
+      max-width: 100%;
+      text-align: initial;
+      font-size: 2rem;
+    }
+
+    div {
+      order: 2;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 620px) {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+`;
