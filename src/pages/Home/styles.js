@@ -88,3 +88,81 @@ export const AboutContainer = styled.section`
     }
   }
 `;
+
+export const PlaylistContainer = styled.section`
+  margin-bottom: 10rem;
+  p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  a {
+    color: ${(props) => props.theme.text};
+  }
+
+  @media (max-width: 620px) {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+`;
+
+export const PhraseContainerBG = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10rem;
+
+  @media (max-width: 1000px) {
+    & {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+`;
+
+export const ImageContainer = styled.div`
+  background: #c9bdab;
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    & {
+      order: 1;
+    }
+  }
+`;
+
+export const PhraseContainer = styled.div`
+  background: #c9bdab;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  p {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 1200px) {
+    & {
+      gap: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    & {
+      order: 2;
+      padding: 4rem 0;
+    }
+    p {
+      text-align: center;
+    }
+  }
+`;
