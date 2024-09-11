@@ -169,3 +169,68 @@ export const PhraseContainer = styled.div`
     }
   }
 `;
+
+export const FormSection = styled.section`
+  margin-bottom: 10rem;
+
+  div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #b99365;
+  }
+`;
+
+export const FormContainer = styled.form`
+  display: flex;
+  justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    flex-grow: 1;
+    gap: 2rem;
+
+    input {
+      height: 60px;
+      padding: 1rem;
+      font-family: "Comfortaa", sans-serif;
+      border: 1px solid #b99365;
+    }
+
+    textarea {
+      height: 120px;
+      padding: 1rem;
+      font-family: "Comfortaa", sans-serif;
+      border: 1px solid #b99365;
+    }
+
+    button {
+      height: 60px;
+      font-family: "Comfortaa", sans-serif;
+      background: #b99365;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ad7f46;
+    }
+  }
+`;
