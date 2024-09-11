@@ -504,10 +504,24 @@ Error generating stack: `+l.message+`
     a {
       text-decoration: none;
       color: ${e=>e.theme.text};
+      position: relative;
     }
 
-    a:hover {
-      text-decoration: underline;
+    a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 100%;
+      height: 1px;
+      background-color: ${e=>e.theme.text};
+      transform: scaleX(0);
+      transform-origin: bottom left;
+      transition: transform 0.5s ease;
+    }
+
+    a:hover::after {
+      transform: scaleX(1);
     }
 
     img {
