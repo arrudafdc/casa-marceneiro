@@ -252,6 +252,17 @@ Error generating stack: `+l.message+`
     text-align: center;
     color: #b99365;
   }
+
+  @media (max-width: 1200px) {
+    h2 {
+      font-size: 1.5rem;
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `,$m=ae.form`
   display: flex;
   justify-content: center;
