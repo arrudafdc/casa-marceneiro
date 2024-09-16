@@ -65,6 +65,10 @@ Error generating stack: `+l.message+`
     & {
       padding: 0 4rem;
     }
+
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 
   @media (max-width: 620px) {
@@ -620,6 +624,12 @@ Error generating stack: `+l.message+`
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 5rem;
+  }
+
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `,Iw=oe.section`
   display: grid;
