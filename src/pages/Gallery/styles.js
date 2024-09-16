@@ -6,6 +6,12 @@ export const GalleryContainer = styled.section`
     text-align: center;
     margin-bottom: 5rem;
   }
+
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const GalleryGrid = styled.section`

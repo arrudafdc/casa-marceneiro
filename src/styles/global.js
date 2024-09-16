@@ -29,6 +29,10 @@ export const MainContainer = styled.div`
     & {
       padding: 0 4rem;
     }
+
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 
   @media (max-width: 620px) {
