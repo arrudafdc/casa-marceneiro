@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/casa-marceneiro/" element={<Home />} />
-          <Route path="/casa-marceneiro/galeria" element={<Gallery />} />
+          <Route path="/galeria" element={<Gallery />} />
         </Routes>
         <Footer />
       </BrowserRouter>
