@@ -1,10 +1,27 @@
 import { Menu, X } from "lucide-react";
 import { MainContainer } from "../../styles/global";
-import { HeaderBG, MenuMobile, Nav } from "./styles";
+import {
+  HeaderBG,
+  HeaderBGDefault,
+  MenuMobile,
+  Nav,
+  NavDefault,
+} from "./styles";
 import logo from "/assets/logo.png";
+import logoDefault from "/assets/logo-cinza.png";
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export function Header() {
+  const location = useLocation();
+  return location.pathname === "/casa-marceneiro/" ? (
+    <HeaderHome />
+  ) : (
+    <HeaderDefault />
+  );
+}
+
+export function HeaderHome() {
   const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
@@ -35,10 +52,12 @@ export function Header() {
               <a href="#">SOBRE</a>
             </li>
           </ul>
-          <img src={logo} alt="" />
+          <Link to="/casa-marceneiro/">
+            <img src={logo} alt="" />
+          </Link>
           <ul>
             <li>
-              <a href="#">GALERIA</a>
+              <Link to="/galeria">GALERIA</Link>
             </li>
             <li>
               <a href="#">CONTATO</a>
@@ -62,9 +81,9 @@ export function Header() {
               </a>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>
+              <Link to="/galeria" onClick={handleClick}>
                 GALERIA
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" onClick={handleClick}>
@@ -78,5 +97,84 @@ export function Header() {
         </MenuMobile>
       </MainContainer>
     </HeaderBG>
+  );
+}
+
+export function HeaderDefault() {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isMobile) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto"; // ou 'scroll', dependendo da sua necessidade
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMobile]);
+
+  function handleClick() {
+    setIsMobile(!isMobile);
+  }
+
+  return (
+    <HeaderBGDefault>
+      <MainContainer>
+        <NavDefault>
+          <ul>
+            <li>
+              <a href="#">A ROTA</a>
+            </li>
+            <li>
+              <a href="#">SOBRE</a>
+            </li>
+          </ul>
+          <Link to="/casa-marceneiro/">
+            <img src={logoDefault} alt="" />
+          </Link>
+          <ul>
+            <li>
+              <Link to="/galeria">GALERIA</Link>
+            </li>
+            <li>
+              <a href="#">CONTATO</a>
+            </li>
+          </ul>
+          <button onClick={handleClick}>
+            <Menu size={32} color="#616161" />
+          </button>
+        </NavDefault>
+
+        <MenuMobile className={isMobile ? "open" : ""}>
+          <ul>
+            <li>
+              <a href="#" onClick={handleClick}>
+                A ROTA
+              </a>
+            </li>
+            <li>
+              <a href="#" onClick={handleClick}>
+                SOBRE
+              </a>
+            </li>
+            <li>
+              <Link href="/galeria" onClick={handleClick}>
+                GALERIA
+              </Link>
+            </li>
+            <li>
+              <a href="#" onClick={handleClick}>
+                CONTATO
+              </a>
+            </li>
+          </ul>
+          <button onClick={handleClick}>
+            <X size={32} color="#737373" />
+          </button>
+        </MenuMobile>
+      </MainContainer>
+    </HeaderBGDefault>
   );
 }

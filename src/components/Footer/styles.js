@@ -12,6 +12,7 @@ export const IconAndNavContainer = styled.div`
     display: flex;
     list-style: none;
     gap: 4rem;
+    font-family: "Comfortaa", sans-serif;
 
     a {
       text-decoration: none;

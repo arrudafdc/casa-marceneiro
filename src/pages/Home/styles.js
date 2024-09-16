@@ -184,7 +184,7 @@ export const FormSection = styled.section`
   h2 {
     font-size: 2rem;
     text-align: center;
-    max-width: 90%;
+    max-width: 70%;
   }
 
   p {

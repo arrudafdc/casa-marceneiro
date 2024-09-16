@@ -80,9 +80,8 @@ export function Home() {
         <FormSection>
           <div>
             <h2>
-              Nossa Casa está aberta para te receber em outros formatos! Seja um
-              casamento intimista ou grande, seja uma festa de welcome ou after,
-              e até mesmo aniversários.
+              Nosso refúgio à beira-mar está pronto para receber sua celebração!
+              Inscreva-se para receber detalhes e mais informações.
             </h2>
             <p>
               Nosso Atendimento Anfitrião está pronto para tirar todas as suas

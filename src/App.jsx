@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Gallery } from "./pages/Gallery";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/casa-marceneiro" element={<Home />} />
-          <Route path="/teste" element={<p>Teste</p>} />
+          <Route path="/casa-marceneiro/" element={<Home />} />
+          <Route path="/casa-marceneiro/galeria" element={<Gallery />} />
         </Routes>
         <Footer />
       </BrowserRouter>
