@@ -20,4 +20,16 @@ export const GalleryGrid = styled.section`
     object-fit: cover; /* Garante que a imagem preencha o quadrado */
     cursor: pointer;
   }
+
+  @media (max-width: 1200px) {
+    & {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 820px) {
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
 `;
