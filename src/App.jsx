@@ -10,11 +10,11 @@ import { Gallery } from "./pages/Gallery";
 function App() {
   return (
     <ThemeProvider theme={defaulTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/casa-marceneiro/">
         <Header />
         <Routes>
           <Route path="/casa-marceneiro/" element={<Home />} />
-          <Route path="/galeria" element={<Gallery />} />
+          <Route path="galeria" element={<Gallery />} />
         </Routes>
         <Footer />
       </BrowserRouter>
