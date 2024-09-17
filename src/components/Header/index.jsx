@@ -14,11 +14,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export function Header() {
   const location = useLocation();
-  return location.pathname === "/casa-marceneiro/" ? (
-    <HeaderHome />
-  ) : (
-    <HeaderDefault />
-  );
+  return location.pathname === "/" ? <HeaderHome /> : <HeaderDefault />;
 }
 
 export function HeaderHome() {
@@ -52,7 +48,7 @@ export function HeaderHome() {
               <a href="#">SOBRE</a>
             </li>
           </ul>
-          <Link to="/casa-marceneiro/">
+          <Link to="/">
             <img src={logo} alt="" />
           </Link>
           <ul>
@@ -131,7 +127,7 @@ export function HeaderDefault() {
               <a href="#">SOBRE</a>
             </li>
           </ul>
-          <Link to="/casa-marceneiro/">
+          <Link to="/">
             <img src={logoDefault} alt="" />
           </Link>
           <ul>
