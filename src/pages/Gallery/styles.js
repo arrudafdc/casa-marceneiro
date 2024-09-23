@@ -7,6 +7,11 @@ export const GalleryContainer = styled.section`
     margin-bottom: 5rem;
   }
 
+  span {
+    font-style: italic;
+    font-weight: 300;
+  }
+
   @media (max-width: 1200px) {
     h1 {
       font-size: 1.5rem;
@@ -15,27 +20,45 @@ export const GalleryContainer = styled.section`
 `;
 
 export const GalleryGrid = styled.section`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 imagens por linha */
-  gap: 10px; /* Espaçamento entre as imagens */
+  column-count: 5; /* Número de colunas */
+  column-gap: 10px; /* Espaçamento horizontal entre as colunas */
   margin-bottom: 10rem;
+  max-width: 1860px;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  div {
+    margin-bottom: 10px; /* Espaçamento vertical entre as imagens */
+  }
 
   img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Mantém o aspecto quadrado */
-    object-fit: cover; /* Garante que a imagem preencha o quadrado */
+    display: block;
+    break-inside: avoid;
     cursor: pointer;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     & {
-      grid-template-columns: 1fr 1fr;
+      column-count: 4; /* Diminui o número de colunas em telas menores */
+    }
+  }
+
+  @media (max-width: 1000px) {
+    & {
+      column-count: 3; /* Diminui o número de colunas em telas menores */
     }
   }
 
   @media (max-width: 820px) {
     & {
-      grid-template-columns: 1fr;
+      column-count: 2; /* Apenas uma coluna em telas bem pequenas */
+    }
+  }
+
+  @media (max-width: 720px) {
+    & {
+      column-count: 1; /* Apenas uma coluna em telas bem pequenas */
     }
   }
 `;

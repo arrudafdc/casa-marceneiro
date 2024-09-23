@@ -1,5 +1,4 @@
 import { Lightbox } from "yet-another-react-lightbox";
-import { MainContainer } from "../../styles/global";
 import { GalleryContainer, GalleryGrid } from "./styles";
 import img1 from "/assets/gallery/img1.jpg";
 import img2 from "/assets/gallery/img2.jpg";
@@ -18,17 +17,17 @@ import React from "react";
 
 const photos = [
   { src: img7 },
+  { src: img10 },
+  { src: img6 },
   { src: img11 },
+  { src: img3 },
   { src: img2 },
   { src: img4 },
-  { src: img5 },
-  { src: img6 },
-  { src: img1 },
-  { src: img8 },
   { src: img9 },
-  { src: img10 },
   { src: img12 },
-  { src: img3 },
+  { src: img8 },
+  { src: img1 },
+  { src: img5 },
 ];
 
 export function Gallery() {
@@ -39,10 +38,10 @@ export function Gallery() {
   }
 
   return (
-    <MainContainer>
+    <div>
       <GalleryContainer>
         <h1>
-          AQUI MILAGRES <br /> ACONTECEM
+          AQUI <span>MILAGRES</span> <br /> ACONTECEM
         </h1>
       </GalleryContainer>
       <GalleryGrid>
@@ -59,6 +58,6 @@ export function Gallery() {
         close={() => setIndex(-1)}
         slides={photos}
       />
-    </MainContainer>
+    </div>
   );
 }

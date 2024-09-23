@@ -53,8 +53,13 @@ export const AboutContainer = styled.section`
 
   p {
     font-size: 2.5rem;
-    max-width: 390px;
+    max-width: 470px;
     text-align: end;
+  }
+
+  span {
+    font-style: italic;
+    display: block;
   }
 
   @media (max-width: 1200px) {
@@ -120,6 +125,10 @@ export const PhraseContainerBG = styled.section`
       flex-direction: column;
     }
   }
+`;
+
+export const ItalicParh = styled.p`
+  font-style: italic;
 `;
 
 export const ImageContainer = styled.div`

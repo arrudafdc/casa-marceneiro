@@ -5,6 +5,7 @@ import {
   FormSection,
   Hero,
   ImageContainer,
+  ItalicParh,
   PhraseContainer,
   PhraseContainerBG,
   PlaylistContainer,
@@ -29,8 +30,8 @@ export function Home() {
           </div>
 
           <p>
-            Abraçada pelos coqueiros e beijada pelo mar. A Casa Marceneiro é um
-            refúgio anfitrião de histórias de amor
+            Abraçada pelos coqueiros e beijada pelo mar.{" "}
+            <span>Nasce um refúgio anfitrião de histórias de amor</span>
           </p>
         </AboutContainer>
         <PlaylistContainer>
@@ -51,7 +52,7 @@ export function Home() {
             <br />
             Em Casa e no paraíso
           </p>
-          <p>
+          <ItalicParh>
             Onde possamos ser nós
             <br />
             De forma única e verdadeira
@@ -61,7 +62,7 @@ export function Home() {
             Feito o marceneiro
             <br />
             Esculpe a madeira
-          </p>
+          </ItalicParh>
           <p>
             Esculpir esse sonho
             <br />
