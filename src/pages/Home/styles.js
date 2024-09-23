@@ -67,6 +67,10 @@ export const AboutContainer = styled.section`
       font-size: 2rem;
       max-width: 300px;
     }
+    span {
+      font-style: italic;
+      display: initial;
+    }
   }
 
   @media (max-width: 1000px) {
