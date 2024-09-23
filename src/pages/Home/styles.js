@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bg from "/assets/bg.jpg";
+import bg from "/assets/bg-teste.jpg";
 
 export const Hero = styled.div`
   width: 100%;

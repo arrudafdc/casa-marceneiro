@@ -12,6 +12,7 @@ import {
 } from "./styles";
 import aboutBg from "/assets/about1.jpg";
 import phraseBg from "/assets/phrase-bg.jpg";
+import teste from "/assets/gallery/img3.jpg";
 
 export function Home() {
   return (
