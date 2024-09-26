@@ -13,6 +13,7 @@ import {
 import aboutBg from "/assets/about1.jpg";
 import phraseBg from "/assets/phrase-bg.jpg";
 import teste from "/assets/gallery/img3.jpg";
+import { VideoPlayer } from "../components";
 
 export function Home() {
   return (
@@ -91,7 +92,7 @@ export function Home() {
             </p>
           </div>
 
-          <FormContainer>
+          {/* <FormContainer>
             <form action="">
               <input placeholder="Nome" type="text" />
               <input placeholder="Telefone" type="text" />
@@ -99,7 +100,9 @@ export function Home() {
               <textarea placeholder="Sua Mensagem"></textarea>
               <button>Enviar</button>
             </form>
-          </FormContainer>
+          </FormContainer> */}
+
+          <VideoPlayer />
         </FormSection>
       </MainContainer>
     </>
