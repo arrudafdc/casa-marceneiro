@@ -654,6 +654,7 @@ Error generating stack: `+l.message+`
   max-width: 1860px;
   padding: 0 2rem;
   margin: 0 auto;
+  margin-bottom: 10rem;
 
   div {
     margin-bottom: 10px; /* Espaçamento vertical entre as imagens */
