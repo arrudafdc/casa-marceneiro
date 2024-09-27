@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeaderBG = styled.header`
   color: #fff;
   font-family: "Comfortaa", sans-serif;
+  font-size: 0.85rem;
   position: absolute;
   width: 100%;
   padding-top: 2rem;
@@ -10,6 +11,7 @@ export const HeaderBG = styled.header`
 
 export const HeaderBGDefault = styled.header`
   font-family: "Comfortaa", sans-serif;
+  font-size: 0.85rem;
   width: 100%;
   padding-top: 2rem;
   margin-bottom: 5rem;
@@ -27,7 +29,8 @@ export const Nav = styled.nav`
   ul {
     list-style: none;
     display: flex;
-    gap: 3.75rem;
+    gap: 5rem;
+    min-width: 211px;
 
     a {
       color: #fff;
@@ -86,7 +89,8 @@ export const NavDefault = styled.nav`
   ul {
     list-style: none;
     display: flex;
-    gap: 3.75rem;
+    gap: 5rem;
+    min-width: 211px;
 
     a {
       color: #616161;
