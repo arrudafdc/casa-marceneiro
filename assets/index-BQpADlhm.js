@@ -388,11 +388,13 @@ Error generating stack: `+l.message+`
  */const yh=gh("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]),ry=q.header`
   color: #fff;
   font-family: "Comfortaa", sans-serif;
+  font-size: 0.85rem;
   position: absolute;
   width: 100%;
   padding-top: 2rem;
 `,oy=q.header`
   font-family: "Comfortaa", sans-serif;
+  font-size: 0.85rem;
   width: 100%;
   padding-top: 2rem;
   margin-bottom: 5rem;
@@ -408,7 +410,8 @@ Error generating stack: `+l.message+`
   ul {
     list-style: none;
     display: flex;
-    gap: 3.75rem;
+    gap: 5rem;
+    min-width: 211px;
 
     a {
       color: #fff;
@@ -465,7 +468,8 @@ Error generating stack: `+l.message+`
   ul {
     list-style: none;
     display: flex;
-    gap: 3.75rem;
+    gap: 5rem;
+    min-width: 211px;
 
     a {
       color: #616161;
