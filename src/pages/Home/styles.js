@@ -17,6 +17,11 @@ export const Hero = styled.div`
     color: #fff;
     text-transform: uppercase;
     font-size: 2.5rem;
+    font-weight: normal;
+  }
+
+  span {
+    font-style: italic;
   }
 
   @media (max-width: 1000px) {
@@ -43,7 +48,7 @@ export const AboutContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   gap: 4rem;
 
   img {
@@ -102,9 +107,14 @@ export const AboutContainer = styled.section`
 `;
 
 export const PlaylistContainer = styled.section`
-  margin-bottom: 10rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
   p {
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-align: center;
   }
   a {

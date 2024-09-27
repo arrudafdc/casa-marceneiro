@@ -12,6 +12,7 @@ import {
 } from "./styles";
 import aboutBg from "/assets/about1.jpg";
 import phraseBg from "/assets/phrase-bg.jpg";
+import saxIcon from "/assets/sax.jpg";
 import teste from "/assets/gallery/img3.jpg";
 import { VideoPlayer } from "../components";
 
@@ -41,6 +42,7 @@ export function Home() {
             Aqui Milagres acontecem! <a href="#">Clique aqui</a> e escute com os
             pés descalços
           </p>
+          <img src={saxIcon} alt="" />
         </PlaylistContainer>
       </MainContainer>
       <PhraseContainerBG>
