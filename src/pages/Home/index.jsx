@@ -84,14 +84,7 @@ export function Home() {
       <MainContainer>
         <FormSection>
           <div>
-            <h2>
-              Nosso refúgio à beira-mar está pronto para receber sua celebração!
-              Inscreva-se para receber detalhes e mais informações.
-            </h2>
-            <p>
-              Nosso Atendimento Anfitrião está pronto para tirar todas as suas
-              dúvidas!
-            </p>
+            <h2>O AMOR & O MAR</h2>
           </div>
 
           {/* <FormContainer>

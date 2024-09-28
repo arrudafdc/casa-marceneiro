@@ -48,8 +48,9 @@ export const AboutContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   gap: 4rem;
+  font-size: 2rem;
 
   img {
     width: 100%;
@@ -57,25 +58,13 @@ export const AboutContainer = styled.section`
   }
 
   p {
-    font-size: 2.5rem;
-    max-width: 470px;
+    max-width: 350px;
     text-align: end;
   }
 
   span {
     font-style: italic;
     display: block;
-  }
-
-  @media (max-width: 1200px) {
-    p {
-      font-size: 2rem;
-      max-width: 300px;
-    }
-    span {
-      font-style: italic;
-      display: initial;
-    }
   }
 
   @media (max-width: 1000px) {
@@ -87,7 +76,7 @@ export const AboutContainer = styled.section`
     p {
       order: 1;
       max-width: 100%;
-      text-align: initial;
+      text-align: center;
       font-size: 2rem;
     }
 
@@ -99,22 +88,28 @@ export const AboutContainer = styled.section`
     }
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 800px) {
     p {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 520px) {
+    p {
+      font-size: 1rem;
     }
   }
 `;
 
 export const PlaylistContainer = styled.section`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   a {
@@ -123,7 +118,7 @@ export const PlaylistContainer = styled.section`
 
   @media (max-width: 620px) {
     p {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
 `;
@@ -160,7 +155,6 @@ export const ImageContainer = styled.div`
 
 export const PhraseContainer = styled.div`
   background: #c9bdab;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,9 +180,6 @@ export const PhraseContainer = styled.div`
     & {
       order: 2;
       padding: 4rem 0;
-    }
-    p {
-      text-align: center;
     }
   }
 `;
