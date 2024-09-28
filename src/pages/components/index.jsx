@@ -1,6 +1,6 @@
 import { VideoContainer, VideoSection } from "./styles";
 import videoFile from "/assets/video.mp4";
-import teste from "/assets/thumb.png";
+import teste from "/assets/thumb.jpg";
 
 export function VideoPlayer() {
   return (
