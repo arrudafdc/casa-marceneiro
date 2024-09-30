@@ -5,6 +5,7 @@ export const GalleryContainer = styled.section`
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 5rem;
+    font-weight: normal;
   }
 
   span {
