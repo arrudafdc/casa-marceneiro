@@ -169,7 +169,7 @@ Error generating stack: `+l.message+`
 
   @media (max-width: 520px) {
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 `,Wg=q.section`
@@ -189,7 +189,7 @@ Error generating stack: `+l.message+`
 
   @media (max-width: 620px) {
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 `,Bg=q.section`
