@@ -49,7 +49,7 @@ export const IconAndNavContainer = styled.div`
     }
 
     ul {
-      gap: 1rem;
+      gap: 1.5rem;
       flex-direction: column;
     }
   }
@@ -64,6 +64,7 @@ export const TjLogoContainer = styled.div`
   p {
     font-family: "Comfortaa", sans-serif;
     font-size: 0.9rem;
+    margin-bottom: 0.5rem;
   }
   img {
     width: 140px;

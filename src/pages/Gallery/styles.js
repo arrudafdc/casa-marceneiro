@@ -56,10 +56,4 @@ export const GalleryGrid = styled.section`
       column-count: 2; /* Apenas uma coluna em telas bem pequenas */
     }
   }
-
-  @media (max-width: 720px) {
-    & {
-      column-count: 1; /* Apenas uma coluna em telas bem pequenas */
-    }
-  }
 `;
