@@ -22,7 +22,7 @@ export const GalleryContainer = styled.section`
 
 export const GalleryGrid = styled.section`
   column-count: 5; /* Número de colunas */
-  column-gap: 10px; /* Espaçamento horizontal entre as colunas */
+  column-gap: 10px;
   margin-bottom: 10rem;
   max-width: 1860px;
   padding: 0 2rem;
