@@ -13,6 +13,16 @@ export function Contact() {
         <div>
           <img src={bgContact} />
         </div>
+        <h2>Entre em contato</h2>
+        <p>
+          Ligue ou envie um e-mail para saber mais ou agendar uma visita com a
+          gente.
+        </p>
+        <p>
+          Phone: 82 99999-9999 <br />
+          Email: casamarceneiro@gmail.com
+        </p>
+        <h2>Preencha o formulário e entraremos em contato com você em breve</h2>
         <p>
           {" "}
           Nossa Casa está aberta para te receber em outros formatos! Seja um
@@ -30,6 +40,7 @@ export function Contact() {
           <input type="tel" id="number" />
           <label htmlFor="message">Menssagem</label>
           <textarea name="message" id="message"></textarea>
+          <button>Enviar</button>
         </form>
       </ContactSection>
     </MainContainer>

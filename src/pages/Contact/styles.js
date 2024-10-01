@@ -23,10 +23,16 @@ export const ContactSection = styled.section`
     width: 100%;
   }
 
+  h2 {
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+
   p {
-    font-size: 2rem;
+    font-size: 1rem;
     max-width: 50%;
     margin-bottom: 2rem;
+    font-family: "Comfortaa", sans-serif;
   }
 
   form {
@@ -49,6 +55,19 @@ export const ContactSection = styled.section`
       padding: 0.5rem;
       height: 200px;
       font-family: "Comfortaa", sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      height: 50px;
+      border: 0;
+      background: #d4af7a;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c19a6b; /* Substitua por qualquer cor desejada */
     }
   }
 
@@ -56,20 +75,16 @@ export const ContactSection = styled.section`
     div {
       margin-bottom: 5rem;
     }
+    p {
+      max-width: 100%;
+    }
 
     span {
       display: initial;
     }
-    p {
-      font-size: 1.5rem;
-      max-width: 100%;
-    }
   }
   @media (max-width: 800px) {
     h1 {
-      font-size: 1.25rem;
-    }
-    p {
       font-size: 1.25rem;
     }
   }
