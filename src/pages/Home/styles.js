@@ -96,7 +96,7 @@ export const AboutContainer = styled.section`
 
   @media (max-width: 520px) {
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 `;

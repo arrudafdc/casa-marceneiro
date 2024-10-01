@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Gallery } from "./pages/Gallery";
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/galeria" element={<Gallery />} />
+          <Route path="/contato" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>

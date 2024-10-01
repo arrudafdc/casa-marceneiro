@@ -58,7 +58,7 @@ export function HeaderHome() {
               <Link to="/galeria">GALERIA</Link>
             </li>
             <li>
-              <a href="#">CONTATO</a>
+              <Link to="/contato">CONTATO</Link>
             </li>
           </ul>
           <button onClick={handleClick}>
@@ -84,9 +84,9 @@ export function HeaderHome() {
               </Link>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>
+              <Link to="/contato" onClick={handleClick}>
                 CONTATO
-              </a>
+              </Link>
             </li>
           </ul>
           <button onClick={handleClick}>
@@ -137,7 +137,7 @@ export function HeaderDefault() {
               <Link to="/galeria">GALERIA</Link>
             </li>
             <li>
-              <a href="#">CONTATO</a>
+              <Link to="/contato">CONTATO</Link>
             </li>
           </ul>
           <button onClick={handleClick}>
@@ -163,9 +163,9 @@ export function HeaderDefault() {
               </Link>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>
+              <Link to="/contato" onClick={handleClick}>
                 CONTATO
-              </a>
+              </Link>
             </li>
           </ul>
           <button onClick={handleClick}>

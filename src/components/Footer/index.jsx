@@ -7,6 +7,7 @@ import {
   TjLogoContainer,
 } from "./styles";
 import logoTj from "/assets/logo-tj.png";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -22,7 +23,7 @@ export function Footer() {
             <nav>
               <ul>
                 <li>
-                  <a href="#">HOME</a>
+                  <Link to="/home">HOME</Link>
                 </li>
                 <li>
                   <a href="#">A ROTA</a>
@@ -31,10 +32,10 @@ export function Footer() {
                   <a href="#">SOBRE</a>
                 </li>
                 <li>
-                  <a href="#">GALERIA</a>
+                  <Link to="/galeria">GALERIA</Link>
                 </li>
                 <li>
-                  <a href="#">CONTATO</a>
+                  <Link to="/contato">CONTATO</Link>
                 </li>
               </ul>
             </nav>
