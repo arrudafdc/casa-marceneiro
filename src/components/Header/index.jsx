@@ -45,7 +45,7 @@ export function HeaderHome() {
   }
 
   return (
-    <HeaderBG data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+    <HeaderBG>
       <MainContainer>
         <Nav>
           <ul>
@@ -128,7 +128,7 @@ export function HeaderDefault() {
   }
 
   return (
-    <HeaderBGDefault data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+    <HeaderBGDefault>
       <MainContainer>
         <NavDefault>
           <ul>

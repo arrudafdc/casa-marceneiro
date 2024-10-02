@@ -152,7 +152,7 @@ export const MenuMobile = styled.nav`
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
   overflow: hidden;
-  z-index: 10000;
+  z-index: 1000;
 
   &.open {
     transform: translateX(0);
