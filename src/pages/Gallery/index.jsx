@@ -1,3 +1,4 @@
+import React from "react";
 import { Lightbox } from "yet-another-react-lightbox";
 import { GalleryContainer, GalleryGrid } from "./styles";
 import img1 from "/assets/gallery/img1.jpg";
@@ -13,7 +14,9 @@ import img10 from "/assets/gallery/img10.jpg";
 import img11 from "/assets/gallery/img11.jpg";
 import img12 from "/assets/gallery/img12.jpg";
 import "yet-another-react-lightbox/styles.css";
-import React from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const photos = [
   { src: img7 },
@@ -37,14 +40,23 @@ export function Gallery() {
     setIndex(index);
   }
 
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 }); // Inicia AOS com duração de 1 segundo
+  }, []);
+
   return (
     <div>
       <GalleryContainer>
-        <h1>
+        <h1 data-aos="fade-up">
           AQUI <span>MILAGRES</span> <br /> ACONTECEM
         </h1>
       </GalleryContainer>
-      <GalleryGrid>
+      <GalleryGrid
+        data-aos="zoom-out"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+      >
         {photos.map((img, index) => (
           <div onClick={() => handleClick(index)} key={index}>
             <img loading="lazy" src={img.src} />

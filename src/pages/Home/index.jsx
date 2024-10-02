@@ -1,7 +1,7 @@
+import React from "react";
 import { MainContainer } from "../../styles/global";
 import {
   AboutContainer,
-  FormContainer,
   FormSection,
   Hero,
   ImageContainer,
@@ -13,31 +13,37 @@ import {
 import aboutBg from "/assets/about1.jpg";
 import phraseBg from "/assets/phrase-bg.jpg";
 import saxIcon from "/assets/sax.jpg";
-import teste from "/assets/gallery/img3.jpg";
 import { VideoPlayer } from "../components";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export function Home() {
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 }); // Inicia AOS com duração de 1 segundo
+  }, []);
+
   return (
     <>
       <Hero>
         <MainContainer>
-          <h1>
+          <h1 data-aos="fade-up">
             É doce casar no mar… <span>Permita-se!</span>
           </h1>
         </MainContainer>
       </Hero>
       <MainContainer>
         <AboutContainer>
-          <div>
+          <div data-aos="fade-up">
             <img src={phraseBg} alt="" />
           </div>
 
-          <p>
+          <p data-aos="fade-up">
             Abraçada pelos coqueiros e beijada pelo mar.{" "}
             <span>Nasce um refúgio anfitrião de histórias de amor</span>
           </p>
         </AboutContainer>
-        <PlaylistContainer>
+        <PlaylistContainer data-aos="zoom-in">
           <p>
             Aqui Milagres acontecem! <a href="#">Clique aqui</a> e escute com os
             pés descalços
@@ -47,7 +53,7 @@ export function Home() {
       </MainContainer>
       <PhraseContainerBG>
         <PhraseContainer>
-          <p>
+          <p data-aos="fade-right">
             Quero viver no teu abraço
             <br />
             Quero morar no teu sorriso
@@ -56,7 +62,7 @@ export function Home() {
             <br />
             Em Casa e no paraíso
           </p>
-          <ItalicParh>
+          <ItalicParh data-aos="fade-right">
             Onde possamos ser nós
             <br />
             De forma única e verdadeira
@@ -67,7 +73,7 @@ export function Home() {
             <br />
             Esculpe a madeira
           </ItalicParh>
-          <p>
+          <p data-aos="fade-right">
             Esculpir esse sonho
             <br />
             Junto a quem gostamos mais
@@ -78,7 +84,12 @@ export function Home() {
           </p>
         </PhraseContainer>
         <ImageContainer>
-          <img src={aboutBg} alt="" />
+          <img
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            src={aboutBg}
+            alt=""
+          />
         </ImageContainer>
       </PhraseContainerBG>
       <MainContainer>

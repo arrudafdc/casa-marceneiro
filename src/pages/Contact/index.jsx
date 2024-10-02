@@ -1,16 +1,29 @@
+import React from "react";
 import { MainContainer } from "../../styles/global";
 import { ContactSection } from "./styles";
 import bgContact from "/assets/bg-contact.jpg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export function Contact() {
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 }); // Inicia AOS com duração de 1 segundo
+  }, []);
+
   return (
     <MainContainer>
       <ContactSection>
-        <h1>
+        <h1 data-aos="fade-up">
           Nosso Atendimento Anfitrião está pronto{" "}
           <span>para tirar todas as suas dúvidas!</span>
         </h1>
-        <div>
+        <div
+          data-aos="zoom-out"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
           <img src={bgContact} />
         </div>
         <h2>Entre em contato</h2>

@@ -142,8 +142,25 @@ export const ItalicParh = styled.p`
 
 export const ImageContainer = styled.div`
   background: #c9bdab;
+  overflow: hidden; // Para ocultar a parte da imagem que ultrapassa o container
+  position: relative; // Para posicionar o conteúdo corretamente
+
   img {
     width: 100%;
+    height: auto;
+    animation: zoom-in-out 10s ease-in-out infinite; // Inicia a animação
+
+    @keyframes zoom-in-out {
+      0% {
+        transform: scale(1.1); // Começa levemente ampliada
+      }
+      50% {
+        transform: scale(1); // Volta ao tamanho original
+      }
+      100% {
+        transform: scale(1.1); // Termina ampliada
+      }
+    }
   }
 
   @media (max-width: 1000px) {

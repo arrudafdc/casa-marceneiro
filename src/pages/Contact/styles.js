@@ -16,7 +16,7 @@ export const ContactSection = styled.section`
   }
 
   div {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 
   img {

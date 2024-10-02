@@ -12,15 +12,21 @@ import logoDefault from "/assets/logo-cinza.png";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export function Header() {
   const location = useLocation();
-  console.log(location.pathname);
 
   return location.pathname === "/home" ? <HeaderHome /> : <HeaderDefault />;
 }
 
 export function HeaderHome() {
   const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 }); // Inicia AOS com duração de 1 segundo
+  }, []);
 
   React.useEffect(() => {
     if (isMobile) {
@@ -39,7 +45,7 @@ export function HeaderHome() {
   }
 
   return (
-    <HeaderBG>
+    <HeaderBG data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
       <MainContainer>
         <Nav>
           <ul>
@@ -102,6 +108,10 @@ export function HeaderDefault() {
   const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
+    AOS.init({ duration: 1000 }); // Inicia AOS com duração de 1 segundo
+  }, []);
+
+  React.useEffect(() => {
     if (isMobile) {
       document.body.style.overflow = "hidden";
     } else {
@@ -118,7 +128,7 @@ export function HeaderDefault() {
   }
 
   return (
-    <HeaderBGDefault>
+    <HeaderBGDefault data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
       <MainContainer>
         <NavDefault>
           <ul>
