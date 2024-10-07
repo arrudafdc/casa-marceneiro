@@ -201,78 +201,20 @@ export const PhraseContainer = styled.div`
   }
 `;
 
-export const FormSection = styled.section`
+export const VideoSection = styled.section`
   margin-bottom: 10rem;
-
-  div:first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 5rem;
-  }
 
   h2 {
     font-size: 2rem;
     text-align: center;
-    max-width: 70%;
-  }
 
-  p {
-    font-family: "Comfortaa", sans-serif;
-    font-size: 1.25rem;
-    text-align: center;
-    color: #b99365;
+    margin-bottom: 5rem;
   }
 
   @media (max-width: 1200px) {
     h2 {
       font-size: 1.5rem;
       max-width: 100%;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-  }
-`;
-
-export const FormContainer = styled.form`
-  display: flex;
-  justify-content: center;
-
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    flex-grow: 1;
-    gap: 2rem;
-
-    input {
-      height: 60px;
-      padding: 1rem;
-      font-family: "Comfortaa", sans-serif;
-      border: 1px solid #b99365;
-    }
-
-    textarea {
-      height: 120px;
-      padding: 1rem;
-      font-family: "Comfortaa", sans-serif;
-      border: 1px solid #b99365;
-    }
-
-    button {
-      height: 60px;
-      font-family: "Comfortaa", sans-serif;
-      background: #b99365;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #ad7f46;
     }
   }
 `;

@@ -2,7 +2,7 @@ import React from "react";
 import { MainContainer } from "../../styles/global";
 import {
   AboutContainer,
-  FormSection,
+  VideoSection,
   Hero,
   ImageContainer,
   ItalicParh,
@@ -13,7 +13,7 @@ import {
 import aboutBg from "/assets/about1.jpg";
 import phraseBg from "/assets/phrase-bg.jpg";
 import saxIcon from "/assets/sax.jpg";
-import { VideoPlayer } from "../components";
+import { VideoPlayer } from "../components/VideoPlayer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -93,23 +93,17 @@ export function Home() {
         </ImageContainer>
       </PhraseContainerBG>
       <MainContainer>
-        <FormSection>
-          <div>
-            <h2>O AMOR & O MAR</h2>
+        <VideoSection>
+          <h2 data-aos="fade-up">O AMOR & O MAR</h2>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <VideoPlayer />
           </div>
-
-          {/* <FormContainer>
-            <form action="">
-              <input placeholder="Nome" type="text" />
-              <input placeholder="Telefone" type="text" />
-              <input placeholder="Email" type="text" />
-              <textarea placeholder="Sua Mensagem"></textarea>
-              <button>Enviar</button>
-            </form>
-          </FormContainer> */}
-
-          <VideoPlayer />
-        </FormSection>
+        </VideoSection>
       </MainContainer>
     </>
   );
