@@ -15,31 +15,12 @@ export const ContactSection = styled.section`
     display: block;
   }
 
-  div {
-    margin-bottom: 5rem;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  h2 {
-    margin-bottom: 1rem;
-    font-weight: normal;
-  }
-
-  p {
-    font-size: 1rem;
-    max-width: 50%;
-    margin-bottom: 2rem;
-    font-family: "Comfortaa", sans-serif;
-  }
-
   form {
     font-family: "Comfortaa", sans-serif;
     max-width: 600px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 
     label {
       margin-bottom: 0.5rem;
@@ -72,13 +53,6 @@ export const ContactSection = styled.section`
   }
 
   @media (max-width: 1000px) {
-    div {
-      margin-bottom: 5rem;
-    }
-    p {
-      max-width: 100%;
-    }
-
     span {
       display: initial;
     }
