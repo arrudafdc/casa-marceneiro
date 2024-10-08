@@ -168,7 +168,7 @@ export function HeaderDefault() {
               </a>
             </li>
             <li>
-              <Link href="/galeria" onClick={handleClick}>
+              <Link to="/galeria" onClick={handleClick}>
                 GALERIA
               </Link>
             </li>

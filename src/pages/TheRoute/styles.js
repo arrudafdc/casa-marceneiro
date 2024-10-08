@@ -17,6 +17,7 @@ export const MainRouteContent = styled.div`
 
   img {
     width: 100%;
+    height: auto;
   }
 
   @media (max-width: 800px) {
@@ -26,6 +27,10 @@ export const MainRouteContent = styled.div`
 
     div {
       margin-bottom: 5rem;
+    }
+    img {
+      height: 200px;
+      object-fit: cover;
     }
   }
 `;
