@@ -6,13 +6,13 @@ export const MainRouteContent = styled.div`
   h1 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     font-weight: normal;
     text-transform: uppercase;
   }
 
   div {
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
   }
 
   img {
@@ -40,7 +40,14 @@ export const CoraisRouteContent = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: normal;
+  }
 
   p {
     font-size: 1.25rem;
@@ -49,11 +56,20 @@ export const CoraisRouteContent = styled.div`
   }
 
   div {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
   }
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    h2 {
+      font-size: 1rem;
+    }
+    div {
+      margin-bottom: 5rem;
+    }
   }
 
   @media (max-width: 800px) {
@@ -79,11 +95,11 @@ export const CoraisFullRouteContent = styled.div`
     & {
       display: block;
       padding: 0 4rem;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
     }
 
     img {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -105,6 +121,10 @@ export const CoraisFullParhRouteContent = styled.div`
     margin-bottom: 2rem;
   }
 
+  span {
+    font-style: italic;
+  }
+
   div {
     width: 50%;
     padding-bottom: 6rem;
@@ -116,7 +136,7 @@ export const CoraisFullParhRouteContent = styled.div`
 
   @media (max-width: 1000px) {
     div {
-      width: 80%;
+      width: 100%;
       padding-bottom: 0;
     }
 
@@ -156,6 +176,16 @@ export const ServicesRouteImageContainer = styled.div`
       flex-direction: column;
       margin-bottom: 5rem;
       gap: 2rem;
+    }
+  }
+`;
+
+export const ServiceHorizontalImage = styled.div`
+  margin-bottom: 4rem;
+
+  @media (max-width: 1000px) {
+    & {
+      margin-bottom: 2rem;
     }
   }
 `;

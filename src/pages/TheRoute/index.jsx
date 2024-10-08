@@ -5,6 +5,7 @@ import {
   CoraisRouteContent,
   MainRouteContent,
   RouteSection,
+  ServiceHorizontalImage,
   ServicesRouteContainer,
   ServicesRouteImageContainer,
 } from "./styles";
@@ -18,6 +19,7 @@ import gastronomia1 from "/assets/gastronomia1.jpg";
 import gastronomia2 from "/assets/gastronomia2.jpg";
 import hospedagem1 from "/assets/hospedagem1.jpg";
 import hospedagem2 from "/assets/hospedagem2.jpg";
+import hospedagem3 from "/assets/hospedagem3.jpg";
 
 export function TheRoute() {
   return (
@@ -37,22 +39,29 @@ export function TheRoute() {
           <div>
             <img src={bgCorais} />
           </div>
-          <p>
-            A Rota Ecológica dos Milagres é composta <br /> por três pequenos
-            municípios ligados <br /> por 23 km de coqueirais.
-          </p>
+          <h2>
+            Um refúgio natural entre <br /> vilas e coqueirais
+          </h2>
         </CoraisRouteContent>
       </MainContainer>
+
       <CoraisFullRouteContent>
         <div>
           <img src={bgBarco} />
         </div>
+
         <CoraisFullParhRouteContent>
           <div>
             <p>
-              Seu desenho apresenta apenas uma rua principal cercada de pequenas
-              vilas e boas energias.
+              A Rota Ecológica dos Milagres é composta por três pequenos
+              municípios ligados por 23 km de coqueirais.{" "}
+              <span>
+                {" "}
+                Seu desenho apresenta apenas uma rua principal cercada de
+                pequenas vilas e boas energias.
+              </span>
             </p>
+            <p></p>
             <img src={bgCoral} />
           </div>
         </CoraisFullParhRouteContent>
@@ -86,6 +95,9 @@ export function TheRoute() {
           <h2>
             E hospedagens charmosas e <br /> confortáveis para todos os gostos
           </h2>
+          <ServiceHorizontalImage>
+            <img src={hospedagem3} />
+          </ServiceHorizontalImage>
           <ServicesRouteImageContainer>
             <div>
               <img src={hospedagem1} alt="" />
