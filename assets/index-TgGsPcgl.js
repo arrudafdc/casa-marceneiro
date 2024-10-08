@@ -731,13 +731,13 @@ Error generating stack: `+i.message+`
   h1 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     font-weight: normal;
     text-transform: uppercase;
   }
 
   div {
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
   }
 
   img {
@@ -763,7 +763,14 @@ Error generating stack: `+i.message+`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: normal;
+  }
 
   p {
     font-size: 1.25rem;
@@ -772,11 +779,20 @@ Error generating stack: `+i.message+`
   }
 
   div {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
   }
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    h2 {
+      font-size: 1rem;
+    }
+    div {
+      margin-bottom: 5rem;
+    }
   }
 
   @media (max-width: 800px) {
@@ -800,11 +816,11 @@ Error generating stack: `+i.message+`
     & {
       display: block;
       padding: 0 4rem;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
     }
 
     img {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -824,6 +840,10 @@ Error generating stack: `+i.message+`
     margin-bottom: 2rem;
   }
 
+  span {
+    font-style: italic;
+  }
+
   div {
     width: 50%;
     padding-bottom: 6rem;
@@ -835,7 +855,7 @@ Error generating stack: `+i.message+`
 
   @media (max-width: 1000px) {
     div {
-      width: 80%;
+      width: 100%;
       padding-bottom: 0;
     }
 
@@ -873,4 +893,12 @@ Error generating stack: `+i.message+`
       gap: 2rem;
     }
   }
-`,ux="/casa-marceneiro/assets/bg-route.jpg",cx="/casa-marceneiro/assets/bg-corais.jpg",dx="/casa-marceneiro/assets/barco-rota.jpg",fx="/casa-marceneiro/assets/coral-rota.jpg",px="/casa-marceneiro/assets/experiencia1.jpg",mx="/casa-marceneiro/assets/experiencia2.jpg",hx="/casa-marceneiro/assets/gastronomia1.jpg",gx="/casa-marceneiro/assets/gastronomia2.jpg",vx="/casa-marceneiro/assets/hospedagem1.jpg",yx="/casa-marceneiro/assets/hospedagem2.jpg";function wx(){return v.jsxs(rx,{children:[v.jsxs(Dt,{children:[v.jsxs(ox,{children:[v.jsx("h1",{children:"A Rota"}),v.jsx("div",{children:v.jsx("img",{src:ux})})]}),v.jsxs(ix,{children:[v.jsxs("p",{children:["Somos abraçados pela segunda maior ",v.jsx("br",{})," barreira de corais do mundo!"]}),v.jsx("div",{children:v.jsx("img",{src:cx})}),v.jsxs("p",{children:["A Rota Ecológica dos Milagres é composta ",v.jsx("br",{})," por três pequenos municípios ligados ",v.jsx("br",{})," por 23 km de coqueirais."]})]})]}),v.jsxs(lx,{children:[v.jsx("div",{children:v.jsx("img",{src:dx})}),v.jsx(ax,{children:v.jsxs("div",{children:[v.jsx("p",{children:"Seu desenho apresenta apenas uma rua principal cercada de pequenas vilas e boas energias."}),v.jsx("img",{src:fx})]})})]}),v.jsx(Dt,{children:v.jsxs(sx,{children:[v.jsxs("h2",{children:["Com experiências para ",v.jsx("br",{})," guardar no coração"]}),v.jsxs(ma,{children:[v.jsx("div",{children:v.jsx("img",{src:px,alt:""})}),v.jsx("div",{children:v.jsx("img",{src:mx,alt:""})})]}),v.jsxs("h2",{children:["Gastronomia rica para ",v.jsx("br",{})," alimentar a alma"]}),v.jsxs(ma,{children:[v.jsx("div",{children:v.jsx("img",{src:hx,alt:""})}),v.jsx("div",{children:v.jsx("img",{src:gx,alt:""})})]}),v.jsxs("h2",{children:["E hospedagens charmosas e ",v.jsx("br",{})," confortáveis para todos os gostos"]}),v.jsxs(ma,{children:[v.jsx("div",{children:v.jsx("img",{src:vx,alt:""})}),v.jsx("div",{children:v.jsx("img",{src:yx,alt:""})})]})]})})]})}function xx(){return v.jsxs($g,{theme:Wg,children:[v.jsxs(ny,{basename:"/casa-marceneiro/",children:[v.jsx(hy,{}),v.jsxs(Yv,{children:[v.jsx(Vr,{path:"/home",element:v.jsx(lv,{})}),v.jsx(Vr,{path:"/rota",element:v.jsx(wx,{})}),v.jsx(Vr,{path:"/galeria",element:v.jsx(ex,{})}),v.jsx(Vr,{path:"/contato",element:v.jsx(nx,{})})]}),v.jsx(jy,{})]}),v.jsx(Ug,{})]})}Ap(document.getElementById("root")).render(v.jsx(g.StrictMode,{children:v.jsx(xx,{})}));
+`,ux=K.div`
+  margin-bottom: 4rem;
+
+  @media (max-width: 1000px) {
+    & {
+      margin-bottom: 2rem;
+    }
+  }
+`,cx="/casa-marceneiro/assets/bg-route.jpg",dx="/casa-marceneiro/assets/bg-corais.jpg",fx="/casa-marceneiro/assets/barco-rota.jpg",px="/casa-marceneiro/assets/coral-rota.jpg",mx="/casa-marceneiro/assets/experiencia1.jpg",hx="/casa-marceneiro/assets/experiencia2.jpg",gx="/casa-marceneiro/assets/gastronomia1.jpg",vx="/casa-marceneiro/assets/gastronomia2.jpg",yx="/casa-marceneiro/assets/hospedagem1.jpg",wx="/casa-marceneiro/assets/hospedagem2.jpg",xx="/casa-marceneiro/assets/hospedagem3.jpg";function kx(){return v.jsxs(rx,{children:[v.jsxs(Dt,{children:[v.jsxs(ox,{children:[v.jsx("h1",{children:"A Rota"}),v.jsx("div",{children:v.jsx("img",{src:cx})})]}),v.jsxs(ix,{children:[v.jsxs("p",{children:["Somos abraçados pela segunda maior ",v.jsx("br",{})," barreira de corais do mundo!"]}),v.jsx("div",{children:v.jsx("img",{src:dx})}),v.jsxs("h2",{children:["Um refúgio natural entre ",v.jsx("br",{})," vilas e coqueirais"]})]})]}),v.jsxs(lx,{children:[v.jsx("div",{children:v.jsx("img",{src:fx})}),v.jsx(ax,{children:v.jsxs("div",{children:[v.jsxs("p",{children:["A Rota Ecológica dos Milagres é composta por três pequenos municípios ligados por 23 km de coqueirais."," ",v.jsxs("span",{children:[" ","Seu desenho apresenta apenas uma rua principal cercada de pequenas vilas e boas energias."]})]}),v.jsx("p",{}),v.jsx("img",{src:px})]})})]}),v.jsx(Dt,{children:v.jsxs(sx,{children:[v.jsxs("h2",{children:["Com experiências para ",v.jsx("br",{})," guardar no coração"]}),v.jsxs(ma,{children:[v.jsx("div",{children:v.jsx("img",{src:mx,alt:""})}),v.jsx("div",{children:v.jsx("img",{src:hx,alt:""})})]}),v.jsxs("h2",{children:["Gastronomia rica para ",v.jsx("br",{})," alimentar a alma"]}),v.jsxs(ma,{children:[v.jsx("div",{children:v.jsx("img",{src:gx,alt:""})}),v.jsx("div",{children:v.jsx("img",{src:vx,alt:""})})]}),v.jsxs("h2",{children:["E hospedagens charmosas e ",v.jsx("br",{})," confortáveis para todos os gostos"]}),v.jsx(ux,{children:v.jsx("img",{src:xx})}),v.jsxs(ma,{children:[v.jsx("div",{children:v.jsx("img",{src:yx,alt:""})}),v.jsx("div",{children:v.jsx("img",{src:wx,alt:""})})]})]})})]})}function Sx(){return v.jsxs($g,{theme:Wg,children:[v.jsxs(ny,{basename:"/casa-marceneiro/",children:[v.jsx(hy,{}),v.jsxs(Yv,{children:[v.jsx(Vr,{path:"/home",element:v.jsx(lv,{})}),v.jsx(Vr,{path:"/rota",element:v.jsx(kx,{})}),v.jsx(Vr,{path:"/galeria",element:v.jsx(ex,{})}),v.jsx(Vr,{path:"/contato",element:v.jsx(nx,{})})]}),v.jsx(jy,{})]}),v.jsx(Ug,{})]})}Ap(document.getElementById("root")).render(v.jsx(g.StrictMode,{children:v.jsx(Sx,{})}));
