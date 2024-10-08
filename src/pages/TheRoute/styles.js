@@ -39,8 +39,8 @@ export const CoraisRouteContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
   flex-direction: column;
+  margin-bottom: 2rem;
 
   p {
     font-size: 1.25rem;
@@ -57,8 +57,75 @@ export const CoraisRouteContent = styled.div`
   }
 
   @media (max-width: 800px) {
+    & {
+      margin-bottom: 0rem;
+    }
     p {
       font-size: 1rem;
+    }
+  }
+`;
+
+export const CoraisFullRouteContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10rem;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    & {
+      display: block;
+      padding: 0 4rem;
+    }
+
+    img {
+      margin-bottom: 4rem;
+    }
+  }
+
+  @media (max-width: 620px) {
+    & {
+      padding: 0 2rem;
+    }
+  }
+`;
+
+export const CoraisFullParhRouteContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  div {
+    width: 50%;
+    padding-bottom: 6rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    div {
+      width: 70%;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 1000px) {
+    div {
+      width: 80%;
     }
   }
 `;
