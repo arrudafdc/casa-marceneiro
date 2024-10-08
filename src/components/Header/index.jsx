@@ -50,7 +50,7 @@ export function HeaderHome() {
         <Nav>
           <ul>
             <li>
-              <a href="#">A ROTA</a>
+              <Link to="/rota">A ROTA</Link>
             </li>
             <li>
               <a href="#">SOBRE</a>
@@ -75,9 +75,9 @@ export function HeaderHome() {
         <MenuMobile className={isMobile ? "open" : ""}>
           <ul>
             <li>
-              <a href="#" onClick={handleClick}>
+              <Link to="/rota" onClick={handleClick}>
                 A ROTA
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" onClick={handleClick}>
@@ -133,7 +133,7 @@ export function HeaderDefault() {
         <NavDefault>
           <ul>
             <li>
-              <a href="#">A ROTA</a>
+              <Link to="/rota">A ROTA</Link>
             </li>
             <li>
               <a href="#">SOBRE</a>
@@ -158,9 +158,9 @@ export function HeaderDefault() {
         <MenuMobile className={isMobile ? "open" : ""}>
           <ul>
             <li>
-              <a href="#" onClick={handleClick}>
+              <Link to="/rota" onClick={handleClick}>
                 A ROTA
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" onClick={handleClick}>

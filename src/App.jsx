@@ -7,6 +7,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Gallery } from "./pages/Gallery";
 import { Contact } from "./pages/Contact";
+import { TheRoute } from "./pages/TheRoute";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/rota" element={<TheRoute />} />
           <Route path="/galeria" element={<Gallery />} />
           <Route path="/contato" element={<Contact />} />
         </Routes>

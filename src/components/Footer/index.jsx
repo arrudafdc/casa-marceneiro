@@ -26,7 +26,7 @@ export function Footer() {
                   <Link to="/home">HOME</Link>
                 </li>
                 <li>
-                  <a href="#">A ROTA</a>
+                  <Link to="/rota">A ROTA</Link>
                 </li>
                 <li>
                   <a href="#">SOBRE</a>
