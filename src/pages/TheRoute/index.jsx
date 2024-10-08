@@ -5,11 +5,19 @@ import {
   CoraisRouteContent,
   MainRouteContent,
   RouteSection,
+  ServicesRouteContainer,
+  ServicesRouteImageContainer,
 } from "./styles";
 import bgRoute from "/assets/bg-route.jpg";
 import bgCorais from "/assets/bg-corais.jpg";
 import bgBarco from "/assets/barco-rota.jpg";
 import bgCoral from "/assets/coral-rota.jpg";
+import experiencia1 from "/assets/experiencia1.jpg";
+import experiencia2 from "/assets/experiencia2.jpg";
+import gastronomia1 from "/assets/gastronomia1.jpg";
+import gastronomia2 from "/assets/gastronomia2.jpg";
+import hospedagem1 from "/assets/hospedagem1.jpg";
+import hospedagem2 from "/assets/hospedagem2.jpg";
 
 export function TheRoute() {
   return (
@@ -49,6 +57,45 @@ export function TheRoute() {
           </div>
         </CoraisFullParhRouteContent>
       </CoraisFullRouteContent>
+      <MainContainer>
+        <ServicesRouteContainer>
+          <h2>
+            Com experiências para <br /> guardar no coração
+          </h2>
+          <ServicesRouteImageContainer>
+            <div>
+              <img src={experiencia1} alt="" />
+            </div>
+            <div>
+              <img src={experiencia2} alt="" />
+            </div>
+          </ServicesRouteImageContainer>
+
+          <h2>
+            Gastronomia rica para <br /> alimentar a alma
+          </h2>
+          <ServicesRouteImageContainer>
+            <div>
+              <img src={gastronomia1} alt="" />
+            </div>
+            <div>
+              <img src={gastronomia2} alt="" />
+            </div>
+          </ServicesRouteImageContainer>
+
+          <h2>
+            E hospedagens charmosas e <br /> confortáveis para todos os gostos
+          </h2>
+          <ServicesRouteImageContainer>
+            <div>
+              <img src={hospedagem1} alt="" />
+            </div>
+            <div>
+              <img src={hospedagem2} alt="" />
+            </div>
+          </ServicesRouteImageContainer>
+        </ServicesRouteContainer>
+      </MainContainer>
     </RouteSection>
   );
 }

@@ -79,6 +79,7 @@ export const CoraisFullRouteContent = styled.div`
     & {
       display: block;
       padding: 0 4rem;
+      margin-bottom: 5rem;
     }
 
     img {
@@ -115,7 +116,8 @@ export const CoraisFullParhRouteContent = styled.div`
 
   @media (max-width: 1000px) {
     div {
-      width: 70%;
+      width: 80%;
+      padding-bottom: 0;
     }
 
     p {
@@ -123,9 +125,37 @@ export const CoraisFullParhRouteContent = styled.div`
       font-size: 1rem;
     }
   }
+`;
+
+export const ServicesRouteContainer = styled.div`
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: normal;
+  }
+
+  img {
+    width: 100%;
+  }
+
   @media (max-width: 1000px) {
-    div {
-      width: 80%;
+    h2 {
+      font-size: 1rem;
+    }
+  }
+`;
+
+export const ServicesRouteImageContainer = styled.div`
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 10rem;
+
+  @media (max-width: 1000px) {
+    & {
+      flex-direction: column;
+      margin-bottom: 5rem;
+      gap: 2rem;
     }
   }
 `;
