@@ -224,6 +224,7 @@ export const AirportRouteContentText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
+  padding-bottom: 1rem;
 
   h3 {
     font-weight: normal;
