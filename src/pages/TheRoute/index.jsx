@@ -3,6 +3,7 @@ import {
   AirportRouteContent,
   AirportRouteContentImage,
   AirportRouteContentText,
+  ContactRouteSection,
   CoraisFullParhRouteContent,
   CoraisFullRouteContent,
   CoraisRouteContent,
@@ -24,6 +25,7 @@ import hospedagem1 from "/assets/hospedagem1.jpg";
 import hospedagem2 from "/assets/hospedagem2.jpg";
 import hospedagem3 from "/assets/hospedagem3.jpg";
 import bgAirport from "/assets/airportBG.jpg";
+import mapa from "/assets/mapa.png";
 
 export function TheRoute() {
   return (
@@ -127,6 +129,17 @@ export function TheRoute() {
           <span>* Há helipontos em Milagres.</span>
         </AirportRouteContentText>
       </AirportRouteContent>
+
+      <ContactRouteSection>
+        <div>
+          <img src={mapa} />
+        </div>
+        <p>
+          Para saber mais entre em contato com o nosso <br /> Atendimento
+          Anfitrião para ter acesso <br /> ao nosso Guia Milagres!
+        </p>
+        <button>Entre em contato</button>
+      </ContactRouteSection>
     </RouteSection>
   );
 }

@@ -193,7 +193,7 @@ export const ServiceHorizontalImage = styled.div`
 export const AirportRouteContent = styled.div`
   display: flex;
   gap: 6rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 
   @media (max-width: 1000px) {
     & {
@@ -201,6 +201,7 @@ export const AirportRouteContent = styled.div`
       padding: 0 4rem;
       gap: 2rem;
       align-items: end;
+      margin-bottom: 2rem;
     }
   }
   @media (max-width: 620px) {
@@ -223,7 +224,6 @@ export const AirportRouteContentText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding-bottom: 1rem;
 
   h3 {
     font-weight: normal;
@@ -235,6 +235,10 @@ export const AirportRouteContentText = styled.div`
     margin-top: 1rem;
   }
   @media (max-width: 1000px) {
+    & {
+      padding-bottom: 0rem;
+    }
+
     h3,
     p,
     span {
@@ -244,6 +248,47 @@ export const AirportRouteContentText = styled.div`
 
   @media (max-width: 620px) {
     h3 {
+      font-size: 1rem;
+    }
+  }
+`;
+
+export const ContactRouteSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+
+  div {
+    width: 400px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    height: 50px;
+    border: 0;
+    background: #d4af7a;
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+  }
+
+  button:hover {
+    background-color: #c19a6b; /* Substitua por qualquer cor desejada */
+  }
+
+  @media (max-width: 1000px) {
+    p {
       font-size: 1rem;
     }
   }
