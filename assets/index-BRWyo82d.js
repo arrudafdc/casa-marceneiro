@@ -931,6 +931,7 @@ Error generating stack: `+i.message+`
   display: flex;
   flex-direction: column;
   justify-content: end;
+  padding-bottom: 1rem;
 
   h3 {
     font-weight: normal;
