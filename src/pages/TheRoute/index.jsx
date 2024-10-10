@@ -1,5 +1,8 @@
 import { MainContainer } from "../../styles/global";
 import {
+  AirportRouteContent,
+  AirportRouteContentImage,
+  AirportRouteContentText,
   CoraisFullParhRouteContent,
   CoraisFullRouteContent,
   CoraisRouteContent,
@@ -20,6 +23,7 @@ import gastronomia2 from "/assets/gastronomia2.jpg";
 import hospedagem1 from "/assets/hospedagem1.jpg";
 import hospedagem2 from "/assets/hospedagem2.jpg";
 import hospedagem3 from "/assets/hospedagem3.jpg";
+import bgAirport from "/assets/airportBG.jpg";
 
 export function TheRoute() {
   return (
@@ -108,6 +112,21 @@ export function TheRoute() {
           </ServicesRouteImageContainer>
         </ServicesRouteContainer>
       </MainContainer>
+
+      <AirportRouteContent>
+        <AirportRouteContentImage>
+          <img src={bgAirport} />
+        </AirportRouteContentImage>
+        <AirportRouteContentText>
+          <h3>
+            COORDENADAS <br /> 9°17'44.6"S 35°23'40.5"W
+          </h3>
+          <p>Aeroportos mais próximos: </p>
+          <p>99km | 1h30 | - Aeroporto de Maceió, AL</p>
+          <p>196km | 3h30 | - Aeroporto de Recife, PE</p>
+          <span>* Há helipontos em Milagres.</span>
+        </AirportRouteContentText>
+      </AirportRouteContent>
     </RouteSection>
   );
 }

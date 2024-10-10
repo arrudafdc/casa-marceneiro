@@ -189,3 +189,62 @@ export const ServiceHorizontalImage = styled.div`
     }
   }
 `;
+
+export const AirportRouteContent = styled.div`
+  display: flex;
+  gap: 6rem;
+  margin-bottom: 10rem;
+
+  @media (max-width: 1000px) {
+    & {
+      flex-direction: column;
+      padding: 0 4rem;
+      gap: 2rem;
+      align-items: end;
+    }
+  }
+  @media (max-width: 620px) {
+    & {
+      padding: 0 2rem;
+    }
+  }
+`;
+
+export const AirportRouteContentImage = styled.div`
+  flex: 0 0 60%;
+
+  img {
+    width: 100%;
+  }
+`;
+
+export const AirportRouteContentText = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 1rem;
+
+  h3 {
+    font-weight: normal;
+    margin-bottom: 2rem;
+  }
+
+  span {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+  @media (max-width: 1000px) {
+    h3,
+    p,
+    span {
+      text-align: end;
+    }
+  }
+
+  @media (max-width: 620px) {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+`;
