@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { MainContainer } from "../../styles/global";
 import {
   AirportRouteContent,
@@ -32,20 +33,25 @@ export function TheRoute() {
     <RouteSection>
       <MainContainer>
         <MainRouteContent>
-          <h1>A Rota</h1>
-          <div>
+          <h1 data-aos="fade-up">A Rota</h1>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
             <img src={bgRoute} />
           </div>
         </MainRouteContent>
         <CoraisRouteContent>
-          <p>
+          <p data-aos="fade">
             Somos abraçados pela segunda maior <br /> barreira de corais do
             mundo!
           </p>
-          <div>
+          <div data-aos="fade-up">
             <img src={bgCorais} />
           </div>
-          <h2>
+          <h2 data-aos="fade">
             Um refúgio natural entre <br /> vilas e coqueirais
           </h2>
         </CoraisRouteContent>
@@ -58,7 +64,7 @@ export function TheRoute() {
 
         <CoraisFullParhRouteContent>
           <div>
-            <p>
+            <p data-aos="fade-left">
               A Rota Ecológica dos Milagres é composta por três pequenos
               municípios ligados por 23 km de coqueirais.{" "}
               <span>
@@ -68,47 +74,47 @@ export function TheRoute() {
               </span>
             </p>
             <p></p>
-            <img src={bgCoral} />
+            <img data-aos="fade-left" src={bgCoral} />
           </div>
         </CoraisFullParhRouteContent>
       </CoraisFullRouteContent>
       <MainContainer>
         <ServicesRouteContainer>
-          <h2>
+          <h2 data-aos="fade">
             Com experiências para <br /> guardar no coração
           </h2>
           <ServicesRouteImageContainer>
-            <div>
+            <div data-aos="fade-right">
               <img src={experiencia1} alt="" />
             </div>
-            <div>
+            <div data-aos="fade-left">
               <img src={experiencia2} alt="" />
             </div>
           </ServicesRouteImageContainer>
 
-          <h2>
+          <h2 data-aos="fade">
             Gastronomia rica para <br /> alimentar a alma
           </h2>
           <ServicesRouteImageContainer>
-            <div>
+            <div data-aos="fade-right">
               <img src={gastronomia1} alt="" />
             </div>
-            <div>
+            <div data-aos="fade-left">
               <img src={gastronomia2} alt="" />
             </div>
           </ServicesRouteImageContainer>
 
-          <h2>
+          <h2 data-aos="fade">
             E hospedagens charmosas e <br /> confortáveis para todos os gostos
           </h2>
-          <ServiceHorizontalImage>
+          <ServiceHorizontalImage data-aos="fade-up">
             <img src={hospedagem3} />
           </ServiceHorizontalImage>
           <ServicesRouteImageContainer>
-            <div>
+            <div data-aos="fade-right">
               <img src={hospedagem1} alt="" />
             </div>
-            <div>
+            <div data-aos="fade-left">
               <img src={hospedagem2} alt="" />
             </div>
           </ServicesRouteImageContainer>
@@ -119,18 +125,18 @@ export function TheRoute() {
         <AirportRouteContentImage>
           <img src={bgAirport} />
         </AirportRouteContentImage>
-        <AirportRouteContentText>
+        <AirportRouteContentText data-aos="fade-left">
           <h3>
             COORDENADAS <br /> 9°17'44.6"S 35°23'40.5"W
           </h3>
-          <p>Aeroportos mais próximos: </p>
+          <p>Aeroportos mais próximos:</p>
           <p>99km | 1h30 | - Aeroporto de Maceió, AL</p>
           <p>196km | 3h30 | - Aeroporto de Recife, PE</p>
           <span>* Há helipontos em Milagres.</span>
         </AirportRouteContentText>
       </AirportRouteContent>
 
-      <ContactRouteSection>
+      <ContactRouteSection data-aos="fade-up">
         <div>
           <img src={mapa} />
         </div>

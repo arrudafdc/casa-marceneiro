@@ -53,7 +53,7 @@ export function HeaderHome() {
               <Link to="/rota">A ROTA</Link>
             </li>
             <li>
-              <a href="#">SOBRE</a>
+              <Link to="/sobre">SOBRE</Link>
             </li>
           </ul>
           <Link to="/home">
@@ -80,9 +80,9 @@ export function HeaderHome() {
               </Link>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>
+              <Link to="/sobre" onClick={handleClick}>
                 SOBRE
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/galeria" onClick={handleClick}>
@@ -136,7 +136,7 @@ export function HeaderDefault() {
               <Link to="/rota">A ROTA</Link>
             </li>
             <li>
-              <a href="#">SOBRE</a>
+              <Link to="/sobre">SOBRE</Link>
             </li>
           </ul>
           <Link to="/home">
@@ -163,9 +163,9 @@ export function HeaderDefault() {
               </Link>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>
+              <Link to="/sobre" onClick={handleClick}>
                 SOBRE
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/galeria" onClick={handleClick}>
