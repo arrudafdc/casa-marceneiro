@@ -7,6 +7,7 @@ import banheiro from "/assets/banheiro.jpg";
 import cozinha from "/assets/cozinha.jpg";
 import arco from "/assets/arco-flores.jpg";
 import decoracao from "/assets/decoracao.jpg";
+import { VideoPlayer } from "../components/VideoPlayer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,6 +21,7 @@ import {
   HouseFullParhAboutContentTwo,
   MainAboutSection,
   TwoImagemSection,
+  VideoAboutSection,
 } from "./styles";
 
 export function About() {
@@ -102,8 +104,7 @@ export function About() {
         </div>
         <HouseFullParhAboutContentTwo>
           <p data-aos="fade-right">
-            Nossa Casa está aberta para te receber em outros formatos! Seja um
-            casamento intimista ou grande.
+            Banheiros climatizados com capacidade para até 150 convidados.
           </p>
           <div>
             <img src={banheiro} />
@@ -119,6 +120,18 @@ export function About() {
             <img src={decoracao} alt="" />
           </div>
         </TwoImagemSection>
+
+        <VideoAboutSection>
+          <h2 data-aos="fade-up">O AMOR & O MAR</h2>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <VideoPlayer />
+          </div>
+        </VideoAboutSection>
       </MainContainer>
     </>
   );

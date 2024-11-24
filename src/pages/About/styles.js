@@ -138,6 +138,7 @@ export const HouseFullAboutContentTwo = styled.div`
 
   @media (max-width: 1000px) {
     grid-template-columns: 1fr;
+    margin-bottom: 5rem;
   }
 `;
 
@@ -177,6 +178,24 @@ export const TwoImagemSection = styled.div`
       flex-direction: column;
       margin-bottom: 5rem;
       gap: 2rem;
+    }
+  }
+`;
+
+export const VideoAboutSection = styled.section`
+  margin-bottom: 10rem;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+
+    margin-bottom: 5rem;
+  }
+
+  @media (max-width: 1200px) {
+    h2 {
+      font-size: 1.5rem;
+      max-width: 100%;
     }
   }
 `;
