@@ -1,5 +1,48 @@
 import styled from "styled-components";
 
+export const MainAboutContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 7rem;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  @media (max-width: 620px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 5rem;
+  }
+`;
+
+export const MainAboutContentParh = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c19a6b;
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 1.25rem;
+    }
+
+    @media (max-width: 620px) {
+      & {
+        padding: 5rem;
+      }
+    }
+  }
+`;
+
 export const AboutAccommodations = styled.section`
   margin-bottom: 7rem;
 
@@ -72,6 +115,7 @@ export const HouseFullAboutContent = styled.div`
 
 export const HouseFullParhAboutContent = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -80,9 +124,26 @@ export const HouseFullParhAboutContent = styled.div`
     max-width: 370px;
   }
 
-  @media (max-width: 1000px) {
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+
+  /* @media (max-width: 1000px) {
     p {
       padding: 0 1rem;
+    } */
+
+  @media (max-width: 1000px) {
+    p {
+      text-align: center;
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 1rem;
+      text-align: center;
     }
   }
 `;
@@ -110,10 +171,17 @@ export const HouseFullParhAboutContentTwo = styled.div`
   background: #c19a6b;
 
   h1 {
+    font-size: 2rem;
     text-align: center;
-    text-transform: uppercase;
     font-weight: normal;
+    text-transform: uppercase;
     color: #fff;
+  }
+
+  @media (max-width: 1000px) {
+    & {
+      padding: 5rem 0;
+    }
   }
 `;
 

@@ -6,9 +6,11 @@ import bgFesta from "/assets/casa-sobre.jpg";
 import moodboard from "/assets/moodboard.jpg";
 import banheiro from "/assets/banheiro.jpg";
 import cozinha from "/assets/cozinha.jpg";
-import teste from "/assets/teste.jpg";
-import arco from "/assets/arco-flores.jpg";
-import decoracao from "/assets/decoracao.jpg";
+import bgMainAbout from "/assets/bg-main-about.jpg";
+import bgSecondAbout from "/assets/bg-second-about.jpg";
+import bgSecondAboutMini from "/assets/bg-second-about-mini.jpg";
+import decoracao from "/assets/about-decoracao.jpg";
+import cerimonia from "/assets/about-cerimonia.jpg";
 import { VideoPlayer } from "../components/VideoPlayer";
 
 import AOS from "aos";
@@ -21,6 +23,8 @@ import {
   HouseFullAboutContentTwo,
   HouseFullParhAboutContent,
   HouseFullParhAboutContentTwo,
+  MainAboutContent,
+  MainAboutContentParh,
   TwoImagemSection,
   VideoAboutSection,
 } from "./styles";
@@ -32,16 +36,16 @@ export function About() {
 
   return (
     <>
-      <HouseFullAboutContentTwo>
+      <MainAboutContent>
         <div>
-          <img src={teste} />
+          <img src={bgMainAbout} />
         </div>
-        <HouseFullParhAboutContentTwo>
+        <MainAboutContentParh>
           <h1 data-aos="fade-right">
             Seu refúgio conta com <br /> 4.100 m² de área total
           </h1>
-        </HouseFullParhAboutContentTwo>
-      </HouseFullAboutContentTwo>
+        </MainAboutContentParh>
+      </MainAboutContent>
       <MainContainer>
         <AboutAccommodations>
           <h2>
@@ -90,11 +94,14 @@ export function About() {
 
       <HouseFullAboutContent>
         <HouseFullParhAboutContent>
-          <p data-aos="fade-right">
-            Nossa Casa está aberta para te receber em outros formatos! Seja um
-            casamento intimista ou grande, seja uma festa de welcome ou after, e
-            até mesmo aniversários.
-          </p>
+          <div>
+            <h2>Histórias Começam Aqui</h2>
+            <p data-aos="fade-right">
+              Nossa Casa está aberta para te receber em outros formatos! Seja um
+              casamento intimista ou grande, seja uma festa de welcome ou after,
+              e até mesmo aniversários.
+            </p>
+          </div>
         </HouseFullParhAboutContent>
         <div>
           <img src={moodboard} />
@@ -103,18 +110,18 @@ export function About() {
 
       <HouseFullAboutContentTwo>
         <div>
-          <img src={cozinha} />
+          <img src={bgSecondAbout} />
         </div>
         <HouseFullParhAboutContentTwo>
           <div>
-            <img src={banheiro} />
+            <img src={bgSecondAboutMini} />
           </div>
         </HouseFullParhAboutContentTwo>
       </HouseFullAboutContentTwo>
       <MainContainer>
         <TwoImagemSection>
           <div data-aos="fade-right">
-            <img src={arco} alt="" />
+            <img src={cerimonia} alt="" />
           </div>
           <div data-aos="fade-left">
             <img src={decoracao} alt="" />
