@@ -41,13 +41,13 @@ export function About() {
           <img src={bgMainAbout} />
         </div>
         <MainAboutContentParh>
-          <h1 data-aos="fade-right">
+          <h1 data-aos="fade-left">
             Seu refúgio conta com <br /> 4.100 m² de área total
           </h1>
         </MainAboutContentParh>
       </MainAboutContent>
       <MainContainer>
-        <AboutAccommodations>
+        <AboutAccommodations data-aos="fade-up">
           <h2>
             Nossos Serviços <span>& Comodidades</span>
           </h2>
@@ -95,7 +95,7 @@ export function About() {
       <HouseFullAboutContent>
         <HouseFullParhAboutContent>
           <div>
-            <h2>Histórias Começam Aqui</h2>
+            <h2 data-aos="fade-right">Histórias Começam Aqui</h2>
             <p data-aos="fade-right">
               Nossa Casa está aberta para te receber em outros formatos! Seja um
               casamento intimista ou grande, seja uma festa de welcome ou after,
@@ -113,7 +113,7 @@ export function About() {
           <img src={bgSecondAbout} />
         </div>
         <HouseFullParhAboutContentTwo>
-          <div>
+          <div data-aos="fade-up">
             <img src={bgSecondAboutMini} />
           </div>
         </HouseFullParhAboutContentTwo>
