@@ -7,15 +7,16 @@ import {
   ContactRouteSection,
   CoraisFullParhRouteContent,
   CoraisFullRouteContent,
-  CoraisRouteContent,
   MainRouteContent,
+  MapContainer,
   RouteSection,
   ServiceHorizontalImage,
   ServicesRouteContainer,
   ServicesRouteImageContainer,
 } from "./styles";
-import bgRoute from "/assets/bg-route.jpg";
-import bgCorais from "/assets/bg-corais.jpg";
+import bgRoute1 from "/assets/bg-route1.jpg";
+import bgRoute2 from "/assets/bg-route2.jpg";
+import bgRoute3 from "/assets/bg-route3.jpg";
 import bgBarco from "/assets/barco-rota.jpg";
 import bgCoral from "/assets/coral-rota.jpg";
 import experiencia1 from "/assets/experiencia1.jpg";
@@ -33,28 +34,22 @@ export function TheRoute() {
     <RouteSection>
       <MainContainer>
         <MainRouteContent>
-          <h1 data-aos="fade-up">A Rota</h1>
+          <h1 data-aos="fade-up">
+            {" "}
+            Somos abraçados pela segunda{" "}
+            <span> maior barreira de corais do mundo!</span>
+          </h1>
           <div
             data-aos="zoom-out"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0"
           >
-            <img src={bgRoute} />
+            <img src={bgRoute1} />
+            <img src={bgRoute2} />
+            <img src={bgRoute3} />
           </div>
         </MainRouteContent>
-        <CoraisRouteContent>
-          <p data-aos="fade">
-            Somos abraçados pela segunda maior <br /> barreira de corais do
-            mundo!
-          </p>
-          <div data-aos="fade-up">
-            <img src={bgCorais} />
-          </div>
-          <h2 data-aos="fade">
-            Um refúgio natural entre <br /> vilas e coqueirais
-          </h2>
-        </CoraisRouteContent>
       </MainContainer>
 
       <CoraisFullRouteContent>
@@ -64,6 +59,9 @@ export function TheRoute() {
 
         <CoraisFullParhRouteContent>
           <div>
+            <h2 data-aos="fade-left">
+              Um refúgio natural entre <span> vilas e coqueirais</span>
+            </h2>
             <p data-aos="fade-left">
               A Rota Ecológica dos Milagres é composta por três pequenos
               municípios ligados por 23 km de coqueirais.{" "}
@@ -80,7 +78,7 @@ export function TheRoute() {
       </CoraisFullRouteContent>
       <MainContainer>
         <ServicesRouteContainer>
-          <h2 data-aos="fade">
+          <h2 data-aos="fade-right">
             Com experiências para <br /> guardar no coração
           </h2>
           <ServicesRouteImageContainer>
@@ -133,13 +131,13 @@ export function TheRoute() {
           <p>99km | 1h30 | - Aeroporto de Maceió, AL</p>
           <p>196km | 3h30 | - Aeroporto de Recife, PE</p>
           <span>* Há helipontos em Milagres.</span>
+          <MapContainer data-aos="fade-left">
+            <img src={mapa} />
+          </MapContainer>
         </AirportRouteContentText>
       </AirportRouteContent>
 
       <ContactRouteSection data-aos="fade-up">
-        <div>
-          <img src={mapa} />
-        </div>
         <p>
           Para saber mais entre em contato com o nosso <br /> Atendimento
           Anfitrião para ter acesso <br /> ao nosso Guia Milagres!

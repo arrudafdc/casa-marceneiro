@@ -3,8 +3,10 @@ import { MainContainer } from "../../styles/global";
 import AboutBg from "/assets/bg-about.jpg";
 import logoIcon from "/assets/logo-icon.svg";
 import bgFesta from "/assets/casa-sobre.jpg";
+import moodboard from "/assets/moodboard.jpg";
 import banheiro from "/assets/banheiro.jpg";
 import cozinha from "/assets/cozinha.jpg";
+import teste from "/assets/teste.jpg";
 import arco from "/assets/arco-flores.jpg";
 import decoracao from "/assets/decoracao.jpg";
 import { VideoPlayer } from "../components/VideoPlayer";
@@ -19,7 +21,6 @@ import {
   HouseFullAboutContentTwo,
   HouseFullParhAboutContent,
   HouseFullParhAboutContentTwo,
-  MainAboutSection,
   TwoImagemSection,
   VideoAboutSection,
 } from "./styles";
@@ -31,15 +32,17 @@ export function About() {
 
   return (
     <>
-      <MainContainer>
-        <MainAboutSection>
-          <h1 data-aos="fade-up">
-            Seu refúgio conta com <span>4.100 m² de área total</span>
+      <HouseFullAboutContentTwo>
+        <div>
+          <img src={teste} />
+        </div>
+        <HouseFullParhAboutContentTwo>
+          <h1 data-aos="fade-right">
+            Seu refúgio conta com <br /> 4.100 m² de área total
           </h1>
-          <div>
-            <img src={AboutBg} />
-          </div>
-        </MainAboutSection>
+        </HouseFullParhAboutContentTwo>
+      </HouseFullAboutContentTwo>
+      <MainContainer>
         <AboutAccommodations>
           <h2>
             Nossos Serviços <span>& Comodidades</span>
@@ -94,7 +97,7 @@ export function About() {
           </p>
         </HouseFullParhAboutContent>
         <div>
-          <img src={bgFesta} />
+          <img src={moodboard} />
         </div>
       </HouseFullAboutContent>
 
@@ -103,9 +106,6 @@ export function About() {
           <img src={cozinha} />
         </div>
         <HouseFullParhAboutContentTwo>
-          <p data-aos="fade-right">
-            Banheiros climatizados com capacidade para até 150 convidados.
-          </p>
           <div>
             <img src={banheiro} />
           </div>

@@ -1,44 +1,5 @@
 import styled from "styled-components";
 
-export const MainAboutSection = styled.section`
-  margin-bottom: 10rem;
-
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 5rem;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
-
-  span {
-    display: block;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  div {
-    margin-bottom: 7rem;
-  }
-
-  @media (max-width: 800px) {
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    & {
-      margin-bottom: 5rem;
-    }
-    img {
-      height: 200px;
-      object-fit: cover;
-    }
-  }
-`;
-
 export const AboutAccommodations = styled.section`
   margin-bottom: 7rem;
 
@@ -144,23 +105,15 @@ export const HouseFullAboutContentTwo = styled.div`
 
 export const HouseFullParhAboutContentTwo = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #c9bdab;
-  gap: 2rem;
+  background: #c19a6b;
 
-  p {
-    font-size: 1.25rem;
-    max-width: 310px;
-    color: #fff;
+  h1 {
     text-align: center;
-  }
-
-  @media (max-width: 1000px) {
-    & {
-      padding: 5rem 0;
-    }
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #fff;
   }
 `;
 

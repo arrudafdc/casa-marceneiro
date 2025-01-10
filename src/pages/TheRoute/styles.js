@@ -11,13 +11,19 @@ export const MainRouteContent = styled.div`
     text-transform: uppercase;
   }
 
+  span {
+    display: block;
+  }
+
   div {
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   img {
-    width: 100%;
     height: auto;
+    max-width: calc(32.333%);
   }
 
   @media (max-width: 800px) {
@@ -28,56 +34,15 @@ export const MainRouteContent = styled.div`
     div {
       margin-bottom: 5rem;
     }
+  }
+
+  @media (max-width: 620px) {
+    span {
+      display: initial;
+    }
     img {
       height: 200px;
       object-fit: cover;
-    }
-  }
-`;
-
-export const CoraisRouteContent = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 1rem;
-
-  h2 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-    font-weight: normal;
-  }
-
-  p {
-    font-size: 1.25rem;
-    text-align: center;
-    margin-bottom: 5rem;
-  }
-
-  div {
-    margin-bottom: 10rem;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  @media (max-width: 1000px) {
-    h2 {
-      font-size: 1rem;
-    }
-    div {
-      margin-bottom: 5rem;
-    }
-  }
-
-  @media (max-width: 800px) {
-    & {
-      margin-bottom: 0rem;
-    }
-    p {
-      font-size: 1rem;
     }
   }
 `;
@@ -116,6 +81,12 @@ export const CoraisFullParhRouteContent = styled.div`
   justify-content: end;
   align-items: center;
 
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: normal;
+  }
+
   p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
@@ -143,6 +114,13 @@ export const CoraisFullParhRouteContent = styled.div`
     p {
       text-align: center;
       font-size: 1rem;
+    }
+    h2 {
+      font-size: 1rem;
+      text-align: center;
+      span {
+        display: block;
+      }
     }
   }
 `;
@@ -204,9 +182,35 @@ export const AirportRouteContent = styled.div`
       margin-bottom: 2rem;
     }
   }
+
   @media (max-width: 620px) {
     & {
       padding: 0 2rem;
+    }
+  }
+`;
+
+export const MapContainer = styled.div`
+  img {
+    width: 70%;
+    height: auto;
+  }
+
+  @media (max-width: 1000px) {
+    & {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 620px) {
+    img {
+      width: 80%;
     }
   }
 `;
