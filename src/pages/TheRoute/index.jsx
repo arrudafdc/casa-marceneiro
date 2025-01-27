@@ -28,6 +28,7 @@ import hospedagem2 from "/assets/hospedagem2.jpg";
 import hospedagem3 from "/assets/hospedagem3.jpg";
 import bgAirport from "/assets/airportBG.jpg";
 import mapa from "/assets/mapa.png";
+import { Link } from "react-router-dom";
 
 export function TheRoute() {
   return (
@@ -142,7 +143,9 @@ export function TheRoute() {
           Para saber mais entre em contato com o nosso <br /> Atendimento
           Anfitrião para ter acesso <br /> ao nosso Guia Milagres!
         </p>
-        <button>Entre em contato</button>
+        <button>
+          <Link to="/contato">Entre em contato</Link>
+        </button>
       </ContactRouteSection>
     </RouteSection>
   );

@@ -29,7 +29,7 @@ export function Footer() {
                   <Link to="/rota">A ROTA</Link>
                 </li>
                 <li>
-                  <a href="#">SOBRE</a>
+                  <Link to="/sobre">SOBRE</Link>
                 </li>
                 <li>
                   <Link to="/galeria">GALERIA</Link>

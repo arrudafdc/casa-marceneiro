@@ -1,11 +1,7 @@
 import React from "react";
 import { MainContainer } from "../../styles/global";
-import AboutBg from "/assets/bg-about.jpg";
 import logoIcon from "/assets/logo-icon.svg";
-import bgFesta from "/assets/casa-sobre.jpg";
 import moodboard from "/assets/moodboard.jpg";
-import banheiro from "/assets/banheiro.jpg";
-import cozinha from "/assets/cozinha.jpg";
 import bgMainAbout from "/assets/bg-main-about.jpg";
 import bgSecondAbout from "/assets/bg-second-about.jpg";
 import bgSecondAboutMini from "/assets/bg-second-about-mini.jpg";

@@ -9,11 +9,13 @@ import { Gallery } from "./pages/Gallery";
 import { Contact } from "./pages/Contact";
 import { TheRoute } from "./pages/TheRoute";
 import { About } from "./pages/About";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
     <ThemeProvider theme={defaulTheme}>
       <BrowserRouter basename="/casa-marceneiro/">
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/home" element={<Home />} />

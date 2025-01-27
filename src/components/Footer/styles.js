@@ -18,6 +18,7 @@ export const IconAndNavContainer = styled.div`
       text-decoration: none;
       color: ${(props) => props.theme.text};
       position: relative;
+      font-size: 0.85rem;
     }
 
     a::after {

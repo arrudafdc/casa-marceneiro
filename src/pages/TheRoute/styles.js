@@ -283,9 +283,13 @@ export const ContactRouteSection = styled.section`
     height: 50px;
     border: 0;
     background: #d4af7a;
-    color: #fff;
     cursor: pointer;
     width: 200px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   button:hover {
