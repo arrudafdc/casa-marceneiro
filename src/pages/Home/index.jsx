@@ -38,12 +38,16 @@ export function Home() {
             <img src={phraseBg} alt="" />
           </div>
 
-          <p data-aos="fade-up">
-            Abraçada pelos coqueiros e beijada pelo mar.{" "}
-            <span>Nasce um refúgio anfitrião de histórias de amor</span>
-          </p>
+          <div>
+            <h2>casa marceneiro</h2>
+            <p data-aos="fade-up">
+              Abraçada pelos coqueiros e beijada pelo mar.{" "}
+              <span>Nasce um refúgio anfitrião de histórias de amor</span>
+            </p>
+          </div>
         </AboutContainer>
         <PlaylistContainer data-aos="zoom-in">
+          <img src={saxIcon} alt="" />
           <p>
             Aqui Milagres acontecem! <a href="#">Clique aqui</a> e escute com os
             pés descalços

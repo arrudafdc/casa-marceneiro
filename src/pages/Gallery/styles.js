@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GalleryContainer = styled.section`
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 5rem;
     font-weight: normal;

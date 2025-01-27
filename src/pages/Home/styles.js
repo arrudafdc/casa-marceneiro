@@ -16,7 +16,7 @@ export const Hero = styled.div`
   h1 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: normal;
   }
 
@@ -46,20 +46,24 @@ export const Hero = styled.div`
 
 export const AboutContainer = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 10rem;
   gap: 4rem;
-  font-size: 2rem;
 
   img {
     width: 100%;
     max-width: 600px;
   }
 
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: normal;
+  }
+
   p {
-    max-width: 350px;
-    text-align: end;
+    font-size: 1.25rem;
   }
 
   span {
@@ -103,17 +107,24 @@ export const AboutContainer = styled.section`
 
 export const PlaylistContainer = styled.section`
   display: flex;
-  gap: 2rem;
-  flex-direction: column;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
   margin-bottom: 10rem;
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
   }
   a {
     color: ${(props) => props.theme.text};
+  }
+
+  img {
+    height: 5rem;
+  }
+
+  img:first-child {
+    transform: scaleX(-1);
   }
 
   @media (max-width: 620px) {
