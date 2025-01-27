@@ -8,6 +8,8 @@ export const IconAndNavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  align-items: center;
+
   ul {
     display: flex;
     list-style: none;
@@ -59,7 +61,17 @@ export const IconAndNavContainer = styled.div`
 export const MidiaIconContainer = styled.div`
   display: flex;
   gap: 2rem;
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.text};
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
 `;
+
+export const NavFooter = styled.div``;
 
 export const TjLogoContainer = styled.div`
   p {

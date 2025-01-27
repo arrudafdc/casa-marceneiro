@@ -1,9 +1,15 @@
-import { PinterestLogo, TiktokLogo, YoutubeLogo } from "phosphor-react";
+import {
+  InstagramLogo,
+  PinterestLogo,
+  WhatsappLogo,
+  YoutubeLogo,
+} from "phosphor-react";
 import { MainContainer } from "../../styles/global";
 import {
   FooterContainer,
   IconAndNavContainer,
   MidiaIconContainer,
+  NavFooter,
   TjLogoContainer,
 } from "./styles";
 import logoTj from "/assets/logo-tj.png";
@@ -15,11 +21,26 @@ export function Footer() {
       <FooterContainer>
         <IconAndNavContainer>
           <MidiaIconContainer>
-            <PinterestLogo size={32} />
-            <TiktokLogo size={32} />
-            <YoutubeLogo size={32} />
+            <a
+              href="https://api.whatsapp.com/send?phone=558293415995&text="
+              target="_blank"
+            >
+              <WhatsappLogo size={32} />
+            </a>
+            <a href="https://www.instagram.com/casamarceneiro/" target="_blank">
+              <InstagramLogo size={32} />
+            </a>
+            <a href="https://br.pinterest.com/casamarceneiro/" target="_blank">
+              <PinterestLogo size={32} />
+            </a>
+            <a
+              href="https://www.youtube.com/@CasaMarceneiro-cu9rw"
+              target="_blank"
+            >
+              <YoutubeLogo size={32} />
+            </a>
           </MidiaIconContainer>
-          <div>
+          <NavFooter>
             <nav>
               <ul>
                 <li>
@@ -39,7 +60,7 @@ export function Footer() {
                 </li>
               </ul>
             </nav>
-          </div>
+          </NavFooter>
         </IconAndNavContainer>
 
         <TjLogoContainer>

@@ -28,7 +28,6 @@ import hospedagem2 from "/assets/hospedagem2.jpg";
 import hospedagem3 from "/assets/hospedagem3.jpg";
 import bgAirport from "/assets/airportBG.jpg";
 import mapa from "/assets/mapa.png";
-import { Link } from "react-router-dom";
 
 export function TheRoute() {
   return (
@@ -144,7 +143,12 @@ export function TheRoute() {
           Anfitrião para ter acesso <br /> ao nosso Guia Milagres!
         </p>
         <button>
-          <Link to="/contato">Entre em contato</Link>
+          <a
+            href="https://api.whatsapp.com/send?phone=558293415995&text="
+            target="_blank"
+          >
+            Entre em contato
+          </a>
         </button>
       </ContactRouteSection>
     </RouteSection>
