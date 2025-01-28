@@ -4,14 +4,14 @@ import {
   AboutContainer,
   VideoSection,
   Hero,
-  ImageContainer,
-  ItalicParh,
-  PhraseContainer,
-  PhraseContainerBG,
   PlaylistContainer,
+  MainAboutContentTwo,
+  MainAboutContentParhTwo,
 } from "./styles";
+import teste from "/assets/teste.jpg";
+import teste2 from "/assets/teste2.jpg";
 import aboutBg from "/assets/about1.jpg";
-import phraseBg from "/assets/phrase-bg.jpg";
+import phraseBg2 from "/assets/phrase-bg.jpg";
 import saxIcon from "/assets/sax.jpg";
 import { VideoPlayer } from "../components/VideoPlayer";
 
@@ -32,70 +32,57 @@ export function Home() {
           </h1>
         </MainContainer>
       </Hero>
+
       <MainContainer>
+        <PlaylistContainer data-aos="zoom-in">
+          <img src={saxIcon} alt="" />
+          <p>
+            Antes de tudo... <a href="#">clique aqui</a> e fique com os pés
+            descalços
+          </p>
+          <img src={saxIcon} alt="" />
+        </PlaylistContainer>
         <AboutContainer>
           <div data-aos="fade-up">
-            <img src={phraseBg} alt="" />
+            <img src={teste2} alt="" />
           </div>
 
           <div>
-            <h2>casa marceneiro</h2>
-            <p data-aos="fade-up">
+            <h2 data-aos="fade-left">Casa marceneiro</h2>
+            <p data-aos="fade-left">
               Abraçada pelos coqueiros e beijada pelo mar.{" "}
               <span>Nasce um refúgio anfitrião de histórias de amor</span>
             </p>
           </div>
         </AboutContainer>
-        <PlaylistContainer data-aos="zoom-in">
-          <img src={saxIcon} alt="" />
-          <p>
-            Aqui Milagres acontecem! <a href="#">Clique aqui</a> e escute com os
-            pés descalços
-          </p>
-          <img src={saxIcon} alt="" />
-        </PlaylistContainer>
       </MainContainer>
-      <PhraseContainerBG>
-        <PhraseContainer>
-          <p data-aos="fade-right">
-            Quero viver no teu abraço
-            <br />
-            Quero morar no teu sorriso
-            <br />
-            Eternizar nossos laços
-            <br />
-            Em Casa e no paraíso
-          </p>
-          <ItalicParh data-aos="fade-right">
-            Onde possamos ser nós
-            <br />
-            De forma única e verdadeira
-            <br />
-            Fazer tudo do nosso jeito
-            <br />
-            Feito o marceneiro
-            <br />
-            Esculpe a madeira
-          </ItalicParh>
-          <p data-aos="fade-right">
-            Esculpir esse sonho
-            <br />
-            Junto a quem gostamos mais
-            <br />
-            Com as bênçãos desse lugar
-            <br />
-            Onde Milagres são reais!
-          </p>
-        </PhraseContainer>
-        <ImageContainer>
-          <img
-            data-aos="zoom-in"
-            data-aos-anchor-placement="top-bottom"
-            src={aboutBg}
-            alt=""
-          />
-        </ImageContainer>
-      </PhraseContainerBG>
+
+      <MainAboutContentTwo>
+        <MainAboutContentParhTwo>
+          <div>
+            <h2 data-aos="fade-right">Nossos votos</h2>
+            <p data-aos="fade-right">
+              Quero viver no teu abraço <br /> Quero morar no teu sorriso
+              <br /> Eternizar nossos laços <br /> Em Casa e no paraíso
+            </p>
+            <p data-aos="fade-right">
+              <span>
+                Onde possamos ser nós <br /> De forma única e verdadeira <br />{" "}
+                Fazer tudo do nosso jeito <br /> Feito o marceneiro <br />{" "}
+                Esculpe a madeira
+              </span>
+            </p>
+            <p data-aos="fade-right">
+              Esculpir esse sonho <br /> Junto a quem gostamos mais <br /> Com
+              as bênçãos desse lugar <br /> Onde Milagres são reais!
+            </p>
+          </div>
+        </MainAboutContentParhTwo>
+        <div>
+          <img src={teste} />
+        </div>
+      </MainAboutContentTwo>
+
       <MainContainer>
         <VideoSection>
           <h2 data-aos="fade-up">O AMOR & O MAR</h2>

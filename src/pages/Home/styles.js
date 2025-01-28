@@ -11,7 +11,7 @@ export const Hero = styled.div`
   background-image: url(${bg});
   background-size: cover;
   background-position: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 
   h1 {
     color: #fff;
@@ -53,7 +53,7 @@ export const AboutContainer = styled.section`
 
   img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
   }
 
   h2 {
@@ -75,13 +75,11 @@ export const AboutContainer = styled.section`
     & {
       flex-direction: column;
       gap: 2rem;
+      margin-bottom: 5rem;
     }
 
-    p {
-      order: 1;
-      max-width: 100%;
+    h2 {
       text-align: center;
-      font-size: 2rem;
     }
 
     div {
@@ -93,8 +91,11 @@ export const AboutContainer = styled.section`
   }
 
   @media (max-width: 800px) {
+    h2 {
+      font-size: 1rem;
+    }
     p {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 
@@ -105,12 +106,84 @@ export const AboutContainer = styled.section`
   }
 `;
 
+export const MainAboutContentTwo = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10rem;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  @media (max-width: 820px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 5rem;
+  }
+`;
+
+export const MainAboutContentParhTwo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #bea68a;
+  color: #fff;
+
+  h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    span {
+      font-style: italic;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 820px) {
+      & {
+        padding: 4rem;
+        order: 1;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+`;
+
 export const PlaylistContainer = styled.section`
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   p {
     font-size: 1.25rem;
     text-align: center;
@@ -120,7 +193,7 @@ export const PlaylistContainer = styled.section`
   }
 
   img {
-    height: 5rem;
+    height: 4rem;
   }
 
   img:first-child {
@@ -129,85 +202,7 @@ export const PlaylistContainer = styled.section`
 
   @media (max-width: 620px) {
     p {
-      font-size: 1.1rem;
-    }
-  }
-`;
-
-export const PhraseContainerBG = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 10rem;
-
-  @media (max-width: 1000px) {
-    & {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-`;
-
-export const ItalicParh = styled.p`
-  font-style: italic;
-`;
-
-export const ImageContainer = styled.div`
-  background: #c9bdab;
-  overflow: hidden; // Para ocultar a parte da imagem que ultrapassa o container
-  position: relative; // Para posicionar o conteúdo corretamente
-
-  img {
-    width: 100%;
-    height: auto;
-    animation: zoom-in-out 10s ease-in-out infinite; // Inicia a animação
-
-    @keyframes zoom-in-out {
-      0% {
-        transform: scale(1.1); // Começa levemente ampliada
-      }
-      50% {
-        transform: scale(1); // Volta ao tamanho original
-      }
-      100% {
-        transform: scale(1.1); // Termina ampliada
-      }
-    }
-  }
-
-  @media (max-width: 1000px) {
-    & {
-      order: 1;
-    }
-  }
-`;
-
-export const PhraseContainer = styled.div`
-  background: #c9bdab;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-
-  p {
-    color: #fff;
-    font-size: 2rem;
-  }
-
-  @media (max-width: 1200px) {
-    & {
-      gap: 2rem;
-    }
-
-    p {
-      font-size: 1.5rem;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    & {
-      order: 2;
-      padding: 4rem 0;
+      font-size: 1rem;
     }
   }
 `;

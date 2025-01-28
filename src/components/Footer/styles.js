@@ -45,10 +45,11 @@ export const IconAndNavContainer = styled.div`
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     & {
       flex-direction: column;
       gap: 2rem;
+      align-items: initial;
     }
 
     ul {
