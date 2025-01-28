@@ -201,6 +201,14 @@ export const PlaylistContainer = styled.section`
   }
 
   @media (max-width: 620px) {
+    & {
+      gap: 1rem;
+    }
+
+    img {
+      height: 3rem;
+    }
+
     p {
       font-size: 1rem;
     }

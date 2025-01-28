@@ -10,8 +10,6 @@ import {
 } from "./styles";
 import teste from "/assets/teste.jpg";
 import teste2 from "/assets/teste2.jpg";
-import aboutBg from "/assets/about1.jpg";
-import phraseBg2 from "/assets/phrase-bg.jpg";
 import saxIcon from "/assets/sax.jpg";
 import { VideoPlayer } from "../components/VideoPlayer";
 
@@ -37,8 +35,14 @@ export function Home() {
         <PlaylistContainer data-aos="zoom-in">
           <img src={saxIcon} alt="" />
           <p>
-            Antes de tudo... <a href="#">clique aqui</a> e fique com os pés
-            descalços
+            Antes de tudo...{" "}
+            <a
+              href="https://open.spotify.com/playlist/5LQIkOoHEQI1L2Uhl7scHn"
+              target="_blank"
+            >
+              clique aqui
+            </a>{" "}
+            e fique com os pés descalços
           </p>
           <img src={saxIcon} alt="" />
         </PlaylistContainer>
