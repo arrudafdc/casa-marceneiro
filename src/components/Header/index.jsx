@@ -75,6 +75,11 @@ export function HeaderHome() {
         <MenuMobile className={isMobile ? "open" : ""}>
           <ul>
             <li>
+              <Link to="/home" onClick={handleClick}>
+                HOME
+              </Link>
+            </li>
+            <li>
               <Link to="/rota" onClick={handleClick}>
                 A ROTA
               </Link>
