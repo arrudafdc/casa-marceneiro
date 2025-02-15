@@ -28,8 +28,19 @@ import hospedagem2 from "/assets/hospedagem2.jpg";
 import hospedagem3 from "/assets/hospedagem3.jpg";
 import bgAirport from "/assets/airportBG.jpg";
 import mapa from "/assets/mapa.png";
+import React from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export function TheRoute() {
+  React.useEffect(() => {
+    setTimeout(() => {
+      AOS.init({ duration: 1000 });
+      AOS.refresh();
+    }, 100);
+  }, []);
+
   return (
     <RouteSection>
       <MainContainer>

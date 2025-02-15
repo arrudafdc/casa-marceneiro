@@ -34,15 +34,18 @@ const photos = [
 ];
 
 export function Gallery() {
+  React.useEffect(() => {
+    setTimeout(() => {
+      AOS.init({ duration: 1000 });
+      AOS.refresh();
+    }, 100);
+  }, []);
+
   const [index, setIndex] = React.useState(-1);
 
   function handleClick(index) {
     setIndex(index);
   }
-
-  React.useEffect(() => {
-    AOS.init({ duration: 1000 }); // Inicia AOS com duração de 1 segundo
-  }, []);
 
   return (
     <div>

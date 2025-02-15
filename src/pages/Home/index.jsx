@@ -18,7 +18,10 @@ import "aos/dist/aos.css";
 
 export function Home() {
   React.useEffect(() => {
-    AOS.init({ duration: 1000 }); // Inicia AOS com duração de 1 segundo
+    setTimeout(() => {
+      AOS.init({ duration: 1000 });
+      AOS.refresh();
+    }, 100);
   }, []);
 
   return (

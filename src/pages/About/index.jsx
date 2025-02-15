@@ -27,7 +27,10 @@ import {
 
 export function About() {
   React.useEffect(() => {
-    AOS.init({ duration: 1000 }); // Inicia AOS com duração de 1 segundo
+    setTimeout(() => {
+      AOS.init({ duration: 1000 });
+      AOS.refresh();
+    }, 100);
   }, []);
 
   return (
@@ -125,7 +128,7 @@ export function About() {
         </TwoImagemSection>
 
         <VideoAboutSection>
-          <h2 data-aos="fade-up">O AMOR & O MAR</h2>
+          <h2 data-aos="fade-up">É doce casar no mar</h2>
           <div
             data-aos="zoom-out"
             data-aos-easing="ease-in-back"

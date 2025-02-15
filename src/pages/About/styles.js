@@ -209,8 +209,9 @@ export const VideoAboutSection = styled.section`
   h2 {
     font-size: 2rem;
     text-align: center;
-
+    text-transform: uppercase;
     margin-bottom: 5rem;
+    font-weight: normal;
   }
 
   @media (max-width: 1200px) {
