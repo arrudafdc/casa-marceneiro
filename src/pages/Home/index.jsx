@@ -9,10 +9,12 @@ import {
   MainAboutContentTwo,
   MainAboutContentParhTwo,
 } from "./styles";
-import teste from "/assets/teste.jpg";
-import teste2 from "/assets/teste2.jpg";
-import saxIcon from "/assets/sax.jpg";
+import casalFrase from "/assets/home-casal-poesia.jpg";
+import casalMain from "/assets/home-casal-main.jpg";
+import saxIcon from "/assets/home-sax.jpg";
 import { VideoPlayer } from "../components/VideoPlayer";
+import videoFile from "/assets/home-video.mp4";
+import thumb from "/assets/home-thumb-video.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -54,7 +56,7 @@ export function Home() {
         </PlaylistContainer>
         <AboutContainer>
           <div data-aos="fade-up">
-            <img src={teste2} alt="" />
+            <img src={casalMain} alt="" />
           </div>
 
           <div>
@@ -89,7 +91,7 @@ export function Home() {
           </div>
         </MainAboutContentParhTwo>
         <div>
-          <img src={teste} />
+          <img src={casalFrase} />
         </div>
       </MainAboutContentTwo>
 
@@ -102,7 +104,7 @@ export function Home() {
             data-aos-delay="300"
             data-aos-offset="0"
           >
-            <VideoPlayer />
+            <VideoPlayer thumb={thumb} videoFile={videoFile} />
           </div>
         </VideoSection>
       </MainContainer>

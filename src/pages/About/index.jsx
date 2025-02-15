@@ -2,13 +2,16 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { MainContainer } from "../../styles/global";
 import logoIcon from "/assets/logo-icon.svg";
-import moodboard from "/assets/moodboard.jpg";
-import bgMainAbout from "/assets/bg-main-about.jpg";
-import bgSecondAbout from "/assets/bg-second-about.jpg";
-import bgSecondAboutMini from "/assets/bg-second-about-mini.jpg";
+
+import bgMainAbout from "/assets/about-bg-main.jpg";
+import moodboard from "/assets/about-moodboard.jpg";
+import bgSecondAbout from "/assets/about-bg-casa.jpg";
+import bgSecondAboutMini from "/assets/about-bg-mini.jpg";
 import decoracao from "/assets/about-decoracao.jpg";
 import cerimonia from "/assets/about-cerimonia.jpg";
 import { VideoPlayer } from "../components/VideoPlayer";
+import videoFile from "/assets/about-video.mp4";
+import thumb from "/assets/about-thumb-video.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -138,7 +141,7 @@ export function About() {
             data-aos-delay="300"
             data-aos-offset="0"
           >
-            <VideoPlayer />
+            <VideoPlayer thumb={thumb} videoFile={videoFile} />
           </div>
         </VideoAboutSection>
       </MainContainer>

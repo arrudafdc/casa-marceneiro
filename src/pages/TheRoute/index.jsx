@@ -14,20 +14,20 @@ import {
   ServicesRouteContainer,
   ServicesRouteImageContainer,
 } from "./styles";
-import bgRoute1 from "/assets/bg-route1.jpg";
-import bgRoute2 from "/assets/bg-route2.jpg";
-import bgRoute3 from "/assets/bg-route3.jpg";
-import bgBarco from "/assets/barco-rota.jpg";
-import bgCoral from "/assets/coral-rota.jpg";
-import experiencia1 from "/assets/experiencia1.jpg";
-import experiencia2 from "/assets/experiencia2.jpg";
-import gastronomia1 from "/assets/gastronomia1.jpg";
-import gastronomia2 from "/assets/gastronomia2.jpg";
-import hospedagem1 from "/assets/hospedagem1.jpg";
-import hospedagem2 from "/assets/hospedagem2.jpg";
-import hospedagem3 from "/assets/hospedagem3.jpg";
-import bgAirport from "/assets/airportBG.jpg";
-import mapa from "/assets/mapa.png";
+import bgRoute1 from "/assets/route-bg-main1.jpg";
+import bgRoute2 from "/assets/route-bg-main2.jpg";
+import bgRoute3 from "/assets/route-bg-main3.jpg";
+import bgBarco from "/assets/route-barco.jpg";
+import bgCoral from "/assets/route-coral.jpg";
+import experiencia1 from "/assets/route-xp1.jpg";
+import experiencia2 from "/assets/route-xp2.jpg";
+import gastronomia1 from "/assets/route-gastronomia1.jpg";
+import gastronomia2 from "/assets/route-gastronomia2.jpg";
+import hospedagem1 from "/assets/route-hospedagem1.jpg";
+import hospedagem2 from "/assets/route-hospedagem2.jpg";
+import hospedagem3 from "/assets/route-hospedagem3.jpg";
+import bgAirport from "/assets/route-cordenadas.jpg";
+import mapa from "/assets/route-mapa.png";
 import React from "react";
 import { useLocation } from "react-router-dom";
 
