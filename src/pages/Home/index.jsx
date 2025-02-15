@@ -23,6 +23,10 @@ export function Home() {
   const location = useLocation();
 
   React.useEffect(() => {
+    document.title = "Casa Marceneiro - Home";
+  }, []);
+
+  React.useEffect(() => {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();

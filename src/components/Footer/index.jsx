@@ -44,7 +44,7 @@ export function Footer() {
             <nav>
               <ul>
                 <li>
-                  <Link to="/home">HOME</Link>
+                  <Link to="/">HOME</Link>
                 </li>
                 <li>
                   <Link to="/rota">A ROTA</Link>

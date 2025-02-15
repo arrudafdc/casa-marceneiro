@@ -14,11 +14,11 @@ import { ScrollToTop } from "./components/ScrollToTop";
 function App() {
   return (
     <ThemeProvider theme={defaulTheme}>
-      <BrowserRouter basename="/casa-marceneiro/">
+      <BrowserRouter basename="/">
         <ScrollToTop />
         <Header />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/rota" element={<TheRoute />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/galeria" element={<Gallery />} />

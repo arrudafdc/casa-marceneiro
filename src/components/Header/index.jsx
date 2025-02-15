@@ -18,7 +18,7 @@ import "aos/dist/aos.css";
 export function Header() {
   const location = useLocation();
 
-  return location.pathname === "/home" ? <HeaderHome /> : <HeaderDefault />;
+  return location.pathname === "/" ? <HeaderHome /> : <HeaderDefault />;
 }
 
 export function HeaderHome() {
@@ -56,7 +56,7 @@ export function HeaderHome() {
               <Link to="/sobre">SOBRE</Link>
             </li>
           </ul>
-          <Link to="/home">
+          <Link to="/">
             <img src={logo} alt="" />
           </Link>
           <ul>
@@ -75,7 +75,7 @@ export function HeaderHome() {
         <MenuMobile className={isMobile ? "open" : ""}>
           <ul>
             <li>
-              <Link to="/home" onClick={handleClick}>
+              <Link to="/" onClick={handleClick}>
                 HOME
               </Link>
             </li>
@@ -144,7 +144,7 @@ export function HeaderDefault() {
               <Link to="/sobre">SOBRE</Link>
             </li>
           </ul>
-          <Link to="/home">
+          <Link to="/">
             <img src={logoDefault} alt="" />
           </Link>
           <ul>
@@ -163,7 +163,7 @@ export function HeaderDefault() {
         <MenuMobile className={isMobile ? "open" : ""}>
           <ul>
             <li>
-              <Link to="/home" onClick={handleClick}>
+              <Link to="/" onClick={handleClick}>
                 HOME
               </Link>
             </li>

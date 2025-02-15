@@ -38,6 +38,10 @@ export function TheRoute() {
   const location = useLocation();
 
   React.useEffect(() => {
+    document.title = "Casa Marceneiro - Rota";
+  }, []);
+
+  React.useEffect(() => {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();

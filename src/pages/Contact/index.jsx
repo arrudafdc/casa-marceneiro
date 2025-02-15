@@ -10,6 +10,10 @@ export function Contact() {
   const location = useLocation();
 
   React.useEffect(() => {
+    document.title = "Casa Marceneiro - Contato";
+  }, []);
+
+  React.useEffect(() => {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();

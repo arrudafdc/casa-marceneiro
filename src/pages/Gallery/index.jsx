@@ -38,6 +38,10 @@ export function Gallery() {
   const location = useLocation();
 
   React.useEffect(() => {
+    document.title = "Casa Marceneiro - Galeria";
+  }, []);
+
+  React.useEffect(() => {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();

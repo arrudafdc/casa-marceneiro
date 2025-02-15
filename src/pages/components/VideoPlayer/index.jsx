@@ -1,5 +1,6 @@
 import { VideoContainer, VideoSection } from "./styles";
 
+// eslint-disable-next-line react/prop-types
 export function VideoPlayer({ thumb, videoFile }) {
   return (
     <VideoContainer>
