@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { Lightbox } from "yet-another-react-lightbox";
 import { GalleryContainer, GalleryGrid } from "./styles";
 import img1 from "/assets/gallery/img1.jpg";
@@ -34,12 +35,14 @@ const photos = [
 ];
 
 export function Gallery() {
+  const location = useLocation();
+
   React.useEffect(() => {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();
-    }, 100);
-  }, []);
+    }, 200); // Pequeno delay para garantir que os elementos estejam prontos
+  }, [location]);
 
   const [index, setIndex] = React.useState(-1);
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { MainContainer } from "../../styles/global";
 import logoIcon from "/assets/logo-icon.svg";
 import moodboard from "/assets/moodboard.jpg";
@@ -26,12 +27,14 @@ import {
 } from "./styles";
 
 export function About() {
+  const location = useLocation();
+
   React.useEffect(() => {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();
-    }, 100);
-  }, []);
+    }, 200); // Pequeno delay para garantir que os elementos estejam prontos
+  }, [location]);
 
   return (
     <>

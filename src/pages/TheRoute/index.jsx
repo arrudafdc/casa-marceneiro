@@ -29,17 +29,20 @@ import hospedagem3 from "/assets/hospedagem3.jpg";
 import bgAirport from "/assets/airportBG.jpg";
 import mapa from "/assets/mapa.png";
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export function TheRoute() {
+  const location = useLocation();
+
   React.useEffect(() => {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();
-    }, 100);
-  }, []);
+    }, 200); // Pequeno delay para garantir que os elementos estejam prontos
+  }, [location]);
 
   return (
     <RouteSection>

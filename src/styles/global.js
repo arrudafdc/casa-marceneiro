@@ -10,6 +10,11 @@ export const GlobalStyle = createGlobalStyle`
   body {
     color: ${(props) => props.theme.text};
     background: ${(props) => props.theme.background};
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
   }
 
   body,

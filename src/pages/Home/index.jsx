@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { MainContainer } from "../../styles/global";
 import {
   AboutContainer,
@@ -17,12 +18,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export function Home() {
+  const location = useLocation();
+
   React.useEffect(() => {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();
-    }, 100);
-  }, []);
+    }, 200); // Pequeno delay para garantir que os elementos estejam prontos
+  }, [location]);
 
   return (
     <>
