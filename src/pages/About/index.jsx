@@ -40,7 +40,7 @@ export function About() {
     setTimeout(() => {
       AOS.init({ duration: 1000 });
       AOS.refresh();
-    }, 200); // Pequeno delay para garantir que os elementos estejam prontos
+    }, 500); // Pequeno delay para garantir que os elementos estejam prontos
   }, [location]);
 
   return (
