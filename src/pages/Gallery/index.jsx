@@ -1,84 +1,74 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 import { Lightbox } from "yet-another-react-lightbox";
 import { GalleryContainer, GalleryGrid } from "./styles";
-import img1 from "/assets/gallery/img1.jpg";
-import img2 from "/assets/gallery/img2.jpg";
-import img3 from "/assets/gallery/img3.jpg";
-import img4 from "/assets/gallery/img4.jpg";
-import img5 from "/assets/gallery/img5.jpg";
-import img6 from "/assets/gallery/img6.jpg";
-import img7 from "/assets/gallery/img7.jpg";
-import img8 from "/assets/gallery/img8.jpg";
-import img9 from "/assets/gallery/img9.jpg";
-import img10 from "/assets/gallery/img10.jpg";
-import img11 from "/assets/gallery/img11.jpg";
-import img12 from "/assets/gallery/img12.jpg";
 import "yet-another-react-lightbox/styles.css";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-const photos = [
-  { src: img7 },
-  { src: img10 },
-  { src: img6 },
-  { src: img11 },
-  { src: img3 },
-  { src: img2 },
-  { src: img4 },
-  { src: img9 },
-  { src: img12 },
-  { src: img8 },
-  { src: img1 },
-  { src: img5 },
-];
+// Importando imagens dinamicamente
+const images = Array.from({ length: 98 }, (_, i) => ({
+  src: `/assets/gallery/img${i + 1}.jpg`,
+}));
 
 export function Gallery() {
-  const location = useLocation();
-
-  React.useEffect(() => {
+  useEffect(() => {
     document.title = "Casa Marceneiro - Galeria";
   }, []);
 
-  React.useEffect(() => {
+  const [index, setIndex] = useState(-1);
+  const [visibleImages, setVisibleImages] = useState(images.slice(0, 20)); // Começa com 20 imagens
+  const loaderRef = useRef(null);
+
+  // Função para carregar mais imagens
+  const loadMoreImages = () => {
     setTimeout(() => {
-      AOS.init({ duration: 1000 });
-      AOS.refresh();
-    }, 500); // Pequeno delay para garantir que os elementos estejam prontos
-  }, [location]);
+      setVisibleImages((prev) => [
+        ...prev,
+        ...images.slice(prev.length, prev.length + 20), // Carrega mais 20 imagens
+      ]);
+    }, 500); // Simula um pequeno delay para carregamento
+  };
 
-  const [index, setIndex] = React.useState(-1);
+  // Intersection Observer para detectar quando o usuário chega ao final
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          loadMoreImages();
+        }
+      },
+      { threshold: 1 }
+    );
 
-  function handleClick(index) {
-    setIndex(index);
-  }
+    if (loaderRef.current) {
+      observer.observe(loaderRef.current);
+    }
+
+    return () => {
+      if (loaderRef.current) {
+        observer.unobserve(loaderRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div>
       <GalleryContainer>
-        <h1 data-aos="fade-up">
+        <h1>
           AQUI <span>MILAGRES</span> <br /> ACONTECEM
         </h1>
       </GalleryContainer>
-      <GalleryGrid
-        data-aos="zoom-out"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
-      >
-        {photos.map((img, index) => (
-          <div onClick={() => handleClick(index)} key={index}>
-            <img loading="lazy" src={img.src} />
+      <GalleryGrid>
+        {visibleImages.map((img, i) => (
+          <div onClick={() => setIndex(i)} key={i}>
+            <img loading="lazy" src={img.src} alt={`Imagem ${i + 1}`} />
           </div>
         ))}
+        <div ref={loaderRef} style={{ height: 20, width: "100%" }} />
       </GalleryGrid>
-
       <Lightbox
         index={index}
         open={index >= 0}
         close={() => setIndex(-1)}
-        slides={photos}
+        slides={visibleImages}
       />
     </div>
   );

@@ -11,7 +11,11 @@ import { TheRoute } from "./pages/TheRoute";
 import { About } from "./pages/About";
 import { ScrollToTop } from "./components/ScrollToTop";
 
+import useMetaPixel from "./hooks/UseMetaPixel";
+
 function App() {
+  useMetaPixel();
+
   return (
     <ThemeProvider theme={defaulTheme}>
       <BrowserRouter basename="/">
